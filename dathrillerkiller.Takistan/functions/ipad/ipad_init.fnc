@@ -1,0 +1,1 @@
+["Open Ipad","ku",["1",false,false,false],ipad_Open]call keypress_add;

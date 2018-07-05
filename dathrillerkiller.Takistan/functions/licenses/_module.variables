@@ -1,0 +1,22 @@
+module_licenses = true;
+
+dtk_licenses = 
+[
+	["car",[atm4,atm1,adminbank], "Drivers License",100],
+	["truck",[atm4,atm1,adminbank], "CDL",1400],
+	["air",[atm4,atm1,adminbank], "Plane License",15000],
+	["Pistollicense",[gunlicsouth,licenseflag2,adminbank],"Pistol License",10000],
+	["Riflelicense",[gunlicsouth,licenseflag2,adminbank],"Rifle License",20000],
+	["automatic",[gunlicsouth,adminbank,licenseflag2,adminbank],"Automatic Rifle License",50000],
+	["engineer",[atm4,atm1,memshop,memshop],"Engineer Training",750],
+	["bomb",[adminbank,atm12],"Terrorist License",100000],
+	["probator",[adminbank,copbank,copbank], "STRS_license_probator",100],
+	["patrol_training",[adminbank,copbank,copbank], "Patrol License",2000],
+	["response_training",[adminbank,copbank,copbank],"Advanced Officer Training",10000],
+	["SCO_training",[adminbank,copswat,copswat],"SCO19 Training",12500],
+	["copAir",[adminbank,copbank,copbank],"Air Support Training",13000],
+	["passport_civilian",[passseller,passseller3],"Passport",100],
+	["southgov",[], "South Government License",60000],
+	["PMClicense",[adminbank,pmcshop,pmcshop], "PMC License",5000],
+	["",[],"n/a",0,"false"]
+];

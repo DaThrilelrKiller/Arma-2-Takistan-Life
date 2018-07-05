@@ -1,0 +1,1 @@
+player addMPEventHandler ["MPKilled",{_this call killfeed_display;}];
