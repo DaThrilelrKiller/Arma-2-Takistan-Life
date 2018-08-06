@@ -1,4 +1,4 @@
-
+﻿
 
 if (processscriptrunning == 1) exitwith { systemChat  "We're Working as fast as we can. Please wait till we are done before giving us another task";
 spamcount = spamcount + 1; 
@@ -9,7 +9,7 @@ processscriptrunning = 1;
 
 _num = round random 100;
 
-if(iscop)exitwith{systemChat  "Only Civilians Can Do This!"; processscriptrunning = 0;};
+if(dtk_cop)exitwith{systemChat  "Only Civilians Can Do This!"; processscriptrunning = 0;};
  _this = _this select 3;
  _item1 = _this select 0;
  _item2 = _this select 1;

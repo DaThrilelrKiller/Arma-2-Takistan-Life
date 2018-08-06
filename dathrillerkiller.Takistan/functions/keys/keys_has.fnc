@@ -1,4 +1,4 @@
-private ["_player","_vcl","_uid","_keychain","_return"];
+﻿private ["_player","_vcl","_uid","_keychain","_return"];
 
 _player = _this select 0;
 _vcl = _this select 1;

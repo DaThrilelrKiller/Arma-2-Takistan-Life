@@ -1,13 +1,11 @@
-private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_target"];
+﻿private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_target"];
 disableSerialization;
 11 cutRsc ["tag_notify", "PLAIN"];
 _text = _this select 0;
 _img = _this select 1;
 
 _display = (uiNamespace getVariable 'tag_notify');
-_control = _display displayCtrl 54;
-_pos = [-0.5,1];
-		
+_control = _display displayCtrl 54;	
 		
 if (_img != "")then 
 {
@@ -17,5 +15,5 @@ if (_img != "")then
 };
 				
 _control ctrlShow true;
-_control ctrlSetPosition [(_pos select 0)-0.125,_pos select 1];
+_control ctrlSetPosition [safezonex* 0.8,safezoney * -2.5];
 _control ctrlCommit 0;

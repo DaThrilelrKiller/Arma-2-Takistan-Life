@@ -1,4 +1,4 @@
-#define armat_jailsoundloc []
+﻿#define armat_jailsoundloc []
 #define FontM 			"Zeppelin32"
 #define FontHTML 		"Zeppelin32"
 #define CT_STATIC 		0
@@ -73,7 +73,7 @@
 
 class RLRPG_MainHUD_RscText {
 	idc = -1;
-	type = CT_STATIC;
+	type = CT_STRUCTURED_TEXT;
 	style = ST_LEFT;
 	colorBackground[] = { 1 , 1 , 1 , 0 };
 	colorText[] = { 1 , 1 , 1 , 1 };

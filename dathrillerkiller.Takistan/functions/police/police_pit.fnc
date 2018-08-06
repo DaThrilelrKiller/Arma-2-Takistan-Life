@@ -1,4 +1,4 @@
-[]spawn {
+﻿[]spawn {
 private ["_vehicle","_speed","_random"];
 
 

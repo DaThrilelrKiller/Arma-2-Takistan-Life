@@ -1,4 +1,4 @@
-private ["_object","_warrant","_amount","_warrants","_bounty"];
+﻿private ["_object","_warrant","_amount","_warrants","_bounty"];
 
 _object = _this select 0;
 _warrant = _this select 1;

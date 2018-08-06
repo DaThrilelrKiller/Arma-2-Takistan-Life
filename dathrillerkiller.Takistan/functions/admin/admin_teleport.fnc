@@ -1,4 +1,4 @@
-createDialog "admin_teleport";
+﻿createDialog "admin_teleport";
 admin_selected = 1;
 [2100, true] call dtk_PlayerListToControl;
 call admin_load;

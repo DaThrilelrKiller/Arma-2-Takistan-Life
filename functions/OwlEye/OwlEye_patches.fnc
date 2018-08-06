@@ -7,7 +7,7 @@ for "_i" from 0 to count (_binConfigPatches)-1 do {
     _patchEntry = _binConfigPatches select _i;
     if (isClass _patchEntry) then {
         if (!((configName _patchEntry) in _patches)) exitWith {
-		 ["ALL",[getPlayerUID player,name player,format ["Unkown Mod: %1",(configName _patchEntry)]],"OwlEye_kick",false,true]call network_MPExec;
+		 ["ALL",[getPlayerUID player,name player,format ["Unkown Mod: %1",(configName _patchEntry)]],"OwlEye_kick",true,true]call network_MPExec;
         };
     };
 };

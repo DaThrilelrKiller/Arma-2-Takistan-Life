@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: keypress_add.fnc
 Desc: Adds a keypress event handler that is triggered when a key is pressed or released
 Author: DaThrillerKiller -PureGaming Founder

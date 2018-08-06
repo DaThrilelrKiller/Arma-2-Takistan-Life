@@ -1,4 +1,4 @@
-private ["_name","_rank"];
+﻿private ["_name","_rank"];
 
 /* grab the variables */
 _name = _this;
@@ -25,15 +25,17 @@ ctrlEnable [8, false];
 ctrlEnable [9, false];
 ctrlEnable [10, false];
 ctrlEnable [11, false];
+ctrlEnable [12, false];
 };
 
 /* sets button actions */
 buttonSetAction [10,"call gang_invite"];
 buttonSetAction [8,"call gang_kick"];
 buttonSetAction [9,"call gang_lock"];
-buttonSetAction [6,"call gang_rename"];
+buttonSetAction [6,"[(ctrlText 5)]call gang_rename"];
 buttonSetAction [7,"call gang_leave"];
 buttonSetAction [11,"call gang_setRank"];
+buttonSetAction [12,"call war_create"];
 
 
 

@@ -1,4 +1,4 @@
-player createDiarySubject ["PureNav","Map Navigation"];
+﻿player createDiarySubject ["PureNav","Map Navigation"];
 
  player createDiaryRecord ["PureNav", ["Hide/Show Markers", 
     "

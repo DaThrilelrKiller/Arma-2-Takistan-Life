@@ -1,9 +1,7 @@
 [
 ["init",false],
 ["ban",true],
-["DialogCheck",true],
 ["kick",true],
-["LogToServer",true],
 ["magizine",false],
 ["patches",false],
 ["Recoil",false],

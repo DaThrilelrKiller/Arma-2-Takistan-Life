@@ -1,4 +1,4 @@
-private ["_vehicle","_pos"];
+﻿private ["_vehicle","_pos"];
 _vehicle = _this;
 _pos = getPos _vehicle;
 

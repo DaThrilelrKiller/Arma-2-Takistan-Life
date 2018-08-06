@@ -1,4 +1,4 @@
-private ["_key","_index","_return"];
+﻿private ["_key","_index","_return"];
 _key = call compile _this;
 
 {

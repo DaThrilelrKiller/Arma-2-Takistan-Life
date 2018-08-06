@@ -1,4 +1,4 @@
-private ["_Funcitons","_externalFunctions"];
+﻿private ["_Funcitons","_externalFunctions"];
 
 _Funcitons = 
 [
@@ -10,7 +10,7 @@ _Funcitons =
 ["inv","entferneillegales","inventory"],
 ["inv","getobjectsteuer","inventory"],
 ["inv","addprozent","inventory"],
-["inv","isarmed","inventory"],
+["inv","isarmed","inventory"], 
 ["inv","getitemsteuer","inventory"],
 
 
@@ -23,14 +23,11 @@ _Funcitons =
 ["main","isplayernear","main"],
 ["main","random","main"],
 
-["ems","neardead","ems"],
-
 ["other","repairvehicle","vehicle"],
 ["other","pullout","vehicle"],
 ["other","putplayerincar","vehicle"],
 
 ["other","getlottoarray","other"],
-["other","safehack","other"],
 ["other","safecodedlgitems","other"],
 
 ["dtk","interationhandler","dathrillerkiller"],
@@ -41,6 +38,3 @@ _Funcitons =
 {
 	call compile format['%1_%2 = compile preprocessFile "functions\%3\fn_%2.fnc";', _x select 0, _x select 1,_x select 2];
 }count _Funcitons;
-
-
-siren_fnc_say = compile preprocessFile "functions\siren\siren_say.fnc";

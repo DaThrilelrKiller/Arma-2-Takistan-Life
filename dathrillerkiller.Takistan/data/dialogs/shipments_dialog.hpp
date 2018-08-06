@@ -1,4 +1,4 @@
-class shipment_open
+﻿class shipment_open
 {
 	idd = 162;
 	movingEnable = true;

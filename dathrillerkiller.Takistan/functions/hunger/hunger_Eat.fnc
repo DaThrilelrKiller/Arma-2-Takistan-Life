@@ -1,4 +1,4 @@
-private ["_item","_amount","_max"];
+﻿private ["_item","_amount","_max"];
 
 _item   = _this select 1;
 _amount = _this select 2;

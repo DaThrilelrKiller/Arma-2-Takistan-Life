@@ -1,4 +1,4 @@
-class ipad
+﻿class ipad
 {
       idd = 563;
 	  movingEnable = true;
@@ -279,6 +279,7 @@ class ipad
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "Zeppelin32";
+			text = "data\images\ipad\DIALOG.PAA";
 			sizeEx = 0.02;
 			moving = false;
 		};

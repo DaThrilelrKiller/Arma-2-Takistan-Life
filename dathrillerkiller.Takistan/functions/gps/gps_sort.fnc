@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_MarkerSorter.sqf
 Desc: Marker sorter in the map tabs used to help navigate players around the map... (Not Complete)
 Author: DaThrillerKiller -PureGaming Founder

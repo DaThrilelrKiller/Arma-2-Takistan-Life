@@ -1,4 +1,4 @@
-private ["_item","_infos","_preisOhneTax","_preis","_name","_type","_index","_sort"];
+﻿private ["_item","_infos","_preisOhneTax","_preis","_name","_type","_index","_sort"];
 
 lbClear 301;
 _sort = lbText [2101, (lbCurSel 2101)];

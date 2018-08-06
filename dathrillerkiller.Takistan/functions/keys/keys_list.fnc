@@ -1,4 +1,4 @@
-private ["_VclVar","_UID","_index"];
+﻿private ["_VclVar","_UID","_index"];
 createDialog "schluessel";
 {
 	_VclVar = (_x getVariable "DTK_OwnerUID");

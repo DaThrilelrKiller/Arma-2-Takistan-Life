@@ -1,4 +1,4 @@
-
+﻿
 private ["_rank","_gang","_members","_info","_name","_data"];
 
 /* grab needed info */

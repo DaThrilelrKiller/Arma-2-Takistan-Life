@@ -1,4 +1,4 @@
-private ["_wallet","_amount"];
+﻿private ["_wallet","_amount"];
 
 _wallet = [player,"geld"] call storage_amount;
 _amount = ctrlText 1400;
@@ -10,10 +10,10 @@ if (_amount <= 0) exitWith {};
 if (atm_running)exitWith {systemchat "atm script running";};
 atm_running = true;
 
-if (Kontostand >= _amount) then 
+if (dtk_bank >= _amount) then 
 {
-	Kontostand = Kontostand - _amount;
-	Kontostand = round(Kontostand);
+	dtk_bank = dtk_bank - _amount;
+	dtk_bank = round(dtk_bank);
 	[player,"geld",_amount] call storage_add;	
 	systemChat  format[localize "STRS_bank_withdraw_yes", (_amount call string_intToString)];	
 	closeDialog 0;

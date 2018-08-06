@@ -9,8 +9,6 @@ _action = _this select 3;
 if (_gangarea==gangarea1) then {_gangarea1 = "West Side";};
 if (_gangarea==gangarea2) then {_gangarea1 = "Little Havana";};
 if (_gangarea==gangarea3) then {_gangarea1 = "East side";};
-if (_gangarea==gangarea4) then {_gangarea1 = "The Safe House";};
-
 
 ["ALL",[_player,"AinvPknlMstpSlayWrflDnon_medic"],"network_SwitchMove",false,false]call network_MPExec;
 waituntil {animationstate _player != "AinvPknlMstpSlayWrflDnon_medic"};

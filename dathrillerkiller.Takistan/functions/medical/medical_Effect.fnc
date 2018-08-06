@@ -1,4 +1,4 @@
-ppEffectDestroy medical_effect_1;
+﻿ppEffectDestroy medical_effect_1;
 medical_effect_1 = ppEffectCreate ["DynamicBlur", 472];
 medical_effect_1 ppEffectEnable true;
 medical_effect_1 ppEffectAdjust [0.3+random 0.3];

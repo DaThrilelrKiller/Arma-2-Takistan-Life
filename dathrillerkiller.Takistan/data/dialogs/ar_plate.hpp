@@ -1,4 +1,4 @@
-class ar_plate
+﻿class ar_plate
 {
 	idd = 8943;
 	Access = ReadAndWrite;
@@ -11,88 +11,34 @@ class ar_plate
 	controlsBackground[] = {};
 	objects[] = {};
 
-	class controls
+	class Controls
 	{
-		class RscPicture_1200: RscPicture
+		class RscPicture_1200 : RscPicture 
 		{
 			idc = -1;
+			x = safeZoneX + safeZoneW * 0.23625;
+			y = safeZoneY + safeZoneH * 0.15666667;
+			w = safeZoneW * 0.130625;
+			h = safeZoneH * 0.13777778;
 			text = "data\images\plates\_plate.paa";
-			x = 0.00630299;
-			y = 0.0126484;
-			w = 0.231302;
-			h = 0.228348;
+			
 		};
-		class RscPicture_1202: RscPicture
+		class Control1587434356
 		{
-			idc = 1;
-			text = "data\images\plates\D.paa";
-			x = 0.0147059;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1203: RscPicture
-		{
-			idc = 2;
-			text = "data\images\plates\a.paa";
-			x = 0.0378151;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1204: RscPicture
-		{
-			idc = 3;
-			text = "data\images\plates\K.paa";
-			x = 0.059874;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1201: RscPicture
-		{
-			idc = 4;
-			text = "data\images\plates\P.paa";
-			x = 0.0840336;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1205: RscPicture
-		{
-			idc = 5;
-			text = "data\images\plates\L.paa";
-			x = 0.113445;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1206: RscPicture
-		{
-			idc = 6;
-			text = "data\images\plates\A.paa";
-			x = 0.136555;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1207: RscPicture
-		{
-			idc = 7;
-			text = "data\images\plates\E.paa";
-			x = 0.157563;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
-		};
-		class RscPicture_1208: RscPicture
-		{
-			idc = 8;
-			text = "data\images\plates\E.paa";
-			x = 0.180672;
-			y = 0.0851935;
-			w = 0.0317227;
-			h = 0.0813989;
+			type = 0;
+			idc = 20;
+			x = safeZoneX + safeZoneW * 0.226875;
+			y = safeZoneY + safeZoneH * 0.17;
+			w = safeZoneW * 0.143125;
+			h = safeZoneH * 0.10555556;
+			style = 0+2+192;
+			text = "DtK-5973";
+			colorBackground[] = {0,0,0,0};
+			colorText[] = {0,0,0,1};
+			font = "Zeppelin33";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2.15);
+			lineSpacing = 0;
+			
 		};
 	};
 };

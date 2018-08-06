@@ -1,4 +1,4 @@
-_vehicle = _this select 0;
+﻿_vehicle = _this select 0;
 _selection = _this select 1;
 
 _index = _vehicle getVariable ["selections", []]find _selection;

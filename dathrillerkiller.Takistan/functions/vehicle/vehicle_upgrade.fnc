@@ -1,4 +1,4 @@
-private ["_vehicle","_vel","_cc","_upgrade","_dir","_pos"];
+﻿private ["_vehicle","_vel","_cc","_upgrade","_dir","_pos"];
 
 _vehicle = vehicle player;
 if (_vehicle == player)exitWith {};

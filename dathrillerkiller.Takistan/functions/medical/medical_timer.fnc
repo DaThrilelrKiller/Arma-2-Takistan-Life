@@ -1,4 +1,4 @@
-private ["_unit","_corps","_time","_deathTime","_text","_marker"];
+﻿private ["_unit","_corps","_time","_deathTime","_text","_marker"];
 _unit = _this select 0;
 _corps = _this select 1;
 _deathTime = _this select 2;
@@ -29,7 +29,7 @@ if (lifeState player == "UNCONSCIOUS")exitWith
 {
 	_corps setPos getPos _unit;
 	disableUserInput false;
-	createDialog "AR_SpawnMenu";
+	call spawn_openMenu;
 	titleText ["", "PLAIN", 3];
 	
 	player call cdb_clear_warrants;

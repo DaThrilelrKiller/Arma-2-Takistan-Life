@@ -1,4 +1,4 @@
-class hooker_diaglog
+﻿class hooker_diaglog
 {
 	idd = -1;
 	

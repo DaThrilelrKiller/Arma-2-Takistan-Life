@@ -1,4 +1,4 @@
-
+﻿
 
 {
 	_x addaction ["Neutralise Flag","noscript.sqf",format ['["SERVER",[player,(player call gang_name),%1,"neutralise"],"S_gang_capture",true,false]call network_MPExec;',_x],1,false,true,"",format ['_control = %1 getvariable "control"; _control != (player call gang_name) && {!pickingup}',_x]];

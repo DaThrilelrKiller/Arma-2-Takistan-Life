@@ -1,4 +1,4 @@
-createDialog "impound";
+﻿createDialog "impound";
 
 private ["_owner","_side","_uid","_name","_displayname","_index"];
 

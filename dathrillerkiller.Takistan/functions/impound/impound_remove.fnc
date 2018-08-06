@@ -1,4 +1,4 @@
-private ["_index","_vehicle","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
+﻿private ["_index","_vehicle","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
 
 
 _index = parseNumber (lbData [1,(lbCurSel 1)]);

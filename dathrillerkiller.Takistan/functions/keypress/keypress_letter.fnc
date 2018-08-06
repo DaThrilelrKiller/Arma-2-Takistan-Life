@@ -1,4 +1,4 @@
-/* Gathers data from pre-defined key settings array that corasponds to the correct key number */
+﻿/* Gathers data from pre-defined key settings array that corasponds to the correct key number */
 
 private ["_key","_return"];
 

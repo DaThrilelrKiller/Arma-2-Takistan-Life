@@ -1,9 +1,11 @@
-private ["_vehicle","_weight","_maxweight"];
+﻿private ["_vehicle","_weight","_maxweight"];
 createDialog "itemkaufdialog";
 _vehicle = _this select 0;
 dtk_active_storage = _vehicle;
 
-[1,_vehicle,true]call storage_toDialog;
+_show = if (_vehicle isKindof "Man")then {false}else{true};
+
+[1,_vehicle,_show]call storage_toDialog;
 [101,player,false]call storage_toDialog;
 
 _weight = [_vehicle]call storage_kg;

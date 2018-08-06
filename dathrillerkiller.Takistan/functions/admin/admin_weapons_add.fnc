@@ -1,4 +1,4 @@
-
+﻿
 private ["_amount","_data","_item","_to","_name"];
 _amount = parseNumber ctrlText 1400;
 _data = call compile(lbData [1501, (lbCurSel 1501)]);

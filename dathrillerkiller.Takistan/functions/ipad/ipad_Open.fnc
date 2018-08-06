@@ -1,12 +1,10 @@
-if (dialog)exitWith {closeDialog 0;};
+﻿if (dialog)exitWith {closeDialog 0;};
 createDialog "ipad";
 
-_bg = call ipad_background;
+_bg = ipad_backgrounds select background_id;
 ctrlSetText [156,_bg];
-ctrlSetText [1200,"data\images\ipad\DIALOG.PAA"];
 
-
-call ipad_LoadApps;
+call ipad_load;
 
 [15009,player,true]call storage_toDialog;
 
@@ -20,3 +18,5 @@ lbSetCurSel [15009, 0];
 buttonSetAction [16009,"[""use"",lbData [15009, (lbCurSel 15009)], ctrlText 10009, lbData [21009, (lbCurSel 21009)]] execVM ""scripts\INVactions.sqf""; closedialog 0;"];
 buttonSetAction [16019,"[""drop"",lbData [15009, (lbCurSel 15009)], ctrlText 10009, lbData [21009, (lbCurSel 21009)]] execVM ""scripts\INVactions.sqf""; closedialog 0;"];
 buttonSetAction [16029,"[""give"",lbData [15009, (lbCurSel 15009)], ctrlText 10009, lbData [21009, (lbCurSel 21009)]] execVM ""scripts\INVactions.sqf""; closedialog 0;"];
+
+true

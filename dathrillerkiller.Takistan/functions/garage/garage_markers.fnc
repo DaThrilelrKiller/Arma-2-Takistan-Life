@@ -1,4 +1,4 @@
-private ["_marker"];
+﻿private ["_marker"];
 
 {
 	_marker = createMarkerLocal [("garage1_" + str _ForEachIndex), getPos _x];

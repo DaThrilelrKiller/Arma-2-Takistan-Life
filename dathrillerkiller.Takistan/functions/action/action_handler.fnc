@@ -1,4 +1,4 @@
-private ["_vehicle"];
+﻿private ["_vehicle"];
 
 _vehicle = player;
 waitUntil {vehicle player != player and (vehicle player) != _vehicle};

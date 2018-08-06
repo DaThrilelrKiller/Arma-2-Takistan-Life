@@ -1,4 +1,4 @@
-private ["_type","_muzzles"];
+﻿private ["_type","_muzzles"];
 
 _type = _this;
 _muzzles = getArray(configFile >> "cfgWeapons" >> _type >> "muzzles");

@@ -1,28 +1,15 @@
-private ["_art","_codeInput"];
+﻿private ["_art","_codeInput"];
 
 _art 	   = _this select 0;
 
 if (_art == "submit") then
 {
-	_codeInput = ctrlText 2920;
-	
-	if (_codeInput != safeCodeSet) exitWith
-	{
-		systemChat  "That code is incorrect!";
-		format['[0,1,2,["robwrongcode", %1]] execVM "scripts\bankrob.sqf";', _safeh] call network_broadcast;
-		format['systemChat "Speedys Security INC Has Detected An Attempt To Hack Into The Bank Safe!";'] call network_broadcast;
-		('if(iscop) then {playsound "beep";}') call network_broadcast;
-		sleep 4;
-		format['systemChat "Speedys Security INC Has Reset The Safe Master Code!"'] call network_broadcast;
-		[] call Main_ResetSafeCode;
-	};
-	
 	if (_codeInput == safeCodeSet) then
 	{
 		player sideChat "The code is correct! The code has been reset by Speedys Security INC automatic bank reset system!";
 		format['[0,1,2,["robstart", %1]] execVM "scripts\bankrob.sqf";', _safeh] call network_broadcast;
-        ('if(iscop) then {playsound "beep";}') call network_broadcast;
-        "if (iscop) then {player sideChat ""ATTENTION All Officers 10-19 to the Bank, currently being robbed by armed gunmen!""};" call network_broadcast;
+        ('if(dtk_cop) then {playsound "beep";}') call network_broadcast;
+        "if (dtk_cop) then {player sideChat ""ATTENTION All Officers 10-19 to the Bank, currently being robbed by armed gunmen!""};" call network_broadcast;
 		[] call Main_ResetSafeCode;
 		if (player distance safe1 <= 3) then
 		{

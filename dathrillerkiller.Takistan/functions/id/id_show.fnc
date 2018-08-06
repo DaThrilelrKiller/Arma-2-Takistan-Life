@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: id_show.fnc
 Desc: Displays a player ID to all players in a 6m radius 
 Author: DaThrillerKiller -PureGaming Founder
@@ -11,7 +11,6 @@ Instagram: https://www.instagram.com/tuckeeeee
 Prams: 
 	0. Use -Default for all items
 */
-
 
 private ["_art"];
 _art = _this select 0;
@@ -42,8 +41,6 @@ else
 	_rank = _ui displayCtrl 1403;
 	_dob = _ui displayCtrl 1401;
 
-	_background ctrlSetText "data\images\id\id.png";
-	_FaceUI ctrlSetText format["data\images\Faces\%1.pac",_Face];
 	_Name ctrlSetText format["%1",name _art];
 	_Idnum ctrlSetText format["%1",getPlayerUID _art];
 	_rank ctrlSetText format["%1","n/a"];

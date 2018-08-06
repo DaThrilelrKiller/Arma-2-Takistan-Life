@@ -1,4 +1,4 @@
-/*
+﻿/*
 Script made by : Foster for OurLifeRPG
 Version 1.1 (Stabel)
 File: bunnyhop.sqf

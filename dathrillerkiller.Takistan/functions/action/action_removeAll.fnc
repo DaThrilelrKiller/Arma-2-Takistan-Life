@@ -1,4 +1,4 @@
-private ["_object","_array"];
+﻿private ["_object","_array"];
 
 _object = _this select 0;
 _array = _object getVariable ["dtk_actions",[]];

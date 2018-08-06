@@ -1,4 +1,4 @@
-private ["_invite","_gang","_text"];
+﻿private ["_invite","_gang","_text"];
 
 /* get needed info for person you are inviting */
 _invite = (call compile lbData [4, lbCurSel 4]select 1);

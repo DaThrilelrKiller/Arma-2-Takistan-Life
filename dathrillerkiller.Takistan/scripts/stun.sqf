@@ -1,4 +1,4 @@
-private ["_art","_ammo","_wep","_bullet","_vel","_pos","_teiler","_shooter","_selection","_damage","_weapons"];
+﻿private ["_art","_ammo","_wep","_bullet","_vel","_pos","_teiler","_shooter","_selection","_damage","_weapons"];
 _art         = _this select 0;
 
 if (_art == "hit") then 

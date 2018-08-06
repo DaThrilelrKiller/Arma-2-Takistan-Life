@@ -1,4 +1,4 @@
-_secondcounter = 0;
+﻿_secondcounter = 0;
 _minutecounter = 0;
 _art = (_this select 3) select 0;
 
@@ -100,7 +100,7 @@ _markername SetMarkerPos _start;
 															
 systemChat  "The VIP target has been marked on the map. Kill him before the police can take him to safety.";
 
-"if (iscop) then {player sideChat ""Someone is trying to kill a government VIP. The target has been marked on the map. Rescue the target before its too late!""};" call network_broadcast;
+"if (dtk_cop) then {player sideChat ""Someone is trying to kill a government VIP. The target has been marked on the map. Rescue the target before its too late!""};" call network_broadcast;
 
 systemChat  "The police are on to you and the VIP knows your coming, hurry up!";
 [player,"Assassin",50000]call cdb_addWarrant;
@@ -135,7 +135,7 @@ while {true} do
 	
 		{
 			
-		kontostand = kontostand + 100000;
+		dtk_bank = dtk_bank + 100000;
 		systemChat  "Well done. Target elimated. $100000 has been transfered to your account.";
 		sleep 10;
 		"systemChat ""The VIP target has been killed!"";" call network_broadcast;
@@ -156,7 +156,7 @@ while {true} do
 		systemChat ""The VIP target has been rescued!"";
 		_copplayernumber = playersNumber west;
 		_copbonus = 40000;
-		if (iscop) then {Kontostand = (Kontostand + _copbonus); player sidechat format[""you received $%1 for the successful rescue of the VIP"", _copbonus];};
+		if (dtk_cop) then {dtk_bank = (dtk_bank + _copbonus); player sidechat format[""you received $%1 for the successful rescue of the VIP"", _copbonus];};
 		" call network_broadcast;
 		sleep 2;
 		systemChat  "The vip was rescued, mission failed!";

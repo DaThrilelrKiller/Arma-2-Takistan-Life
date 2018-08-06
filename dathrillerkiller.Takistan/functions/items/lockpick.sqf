@@ -1,4 +1,4 @@
-private ["_art","_item","_anzahl","_closeVcl","_closest","_incarpark","_car"];
+﻿private ["_art","_item","_anzahl","_closeVcl","_closest","_incarpark","_car"];
 
 _art = _this select 0;
 

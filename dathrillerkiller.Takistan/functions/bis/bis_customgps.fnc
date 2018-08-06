@@ -1,4 +1,4 @@
-scriptName "fn_customGPS.sqf";
+﻿scriptName "fn_customGPS.sqf";
 /*
 	Author: Karel Moricky
 

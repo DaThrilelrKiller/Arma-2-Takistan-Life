@@ -1,4 +1,4 @@
-private ["_data"];
+﻿private ["_data"];
 
 if (v_camera_bool)exitWith {
 	v_camera cameraEffect ["terminate","back"];

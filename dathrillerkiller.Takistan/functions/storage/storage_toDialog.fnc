@@ -1,4 +1,4 @@
-private ["_idc","_object","_array","_arrayitems","_arrayamount","_index"];
+﻿private ["_idc","_object","_array","_arrayitems","_arrayamount","_index"];
 
 _idc = _this select 0;
 _object = _this select 1;

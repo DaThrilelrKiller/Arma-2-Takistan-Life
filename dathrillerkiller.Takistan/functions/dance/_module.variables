@@ -1,4 +1,4 @@
-module_dance = true;
+﻿module_dance = true;
 
 dance_animations = [
 [" ", "anim", "Return To Normal"],

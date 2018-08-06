@@ -1,4 +1,4 @@
-createDialog "liste_1_button";
+﻿createDialog "liste_1_button";
 {
 	_Array = _x;
 	_Scriptname = (_x select 0);

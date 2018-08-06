@@ -12,6 +12,8 @@ _wlveh = [ "CHRYSLER_B_limmo", "pook_freighter1", "pook_tugboat1", "pook_kayak1_
 				if (isnil{_x getVariable "DTK_OwnerUID"})then
 				{
 				[_x,[_x,_x,format["Blacklisted Vehicle: %1",typeOf _x]],"OwlEye_ban",false,true]call network_MPExec;
+
+
 				deleteVehicle _x;
 				};
 			};

@@ -1,4 +1,4 @@
-private ["_unit","_corps","_water","_pos","_dir"];
+﻿private ["_unit","_corps","_water","_pos","_dir"];
 
 _unit = _this select 0;
 _corps = _this select 1;
@@ -10,7 +10,7 @@ _dir = getDir _corps;
 _unit setPos _pos;
 _corps setPos _pos;
 _unit setDir _dir;
-["ALL",[_unit,animationState _corps],"network_switchmove",false,true]call network_MPExec;
+["ALL",[_unit,"AdthPpneMstpSlowWrflDnon_binocular"],"network_switchmove",false,true]call network_MPExec;
 
 _corps setPos [0,0,0];
 

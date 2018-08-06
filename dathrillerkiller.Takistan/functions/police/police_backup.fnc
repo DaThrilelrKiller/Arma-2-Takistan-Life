@@ -1,4 +1,4 @@
-[]spawn {
+﻿[]spawn {
 if (!backupavailable) exitwith {player sidechat format["Your Panic Button Is Disabled, Try Again In 60 Seconds!"];};
 systemChat  format["You have requested backup. Your location has been marked on the map."];
 
@@ -12,8 +12,8 @@ _markerobj setMarkerType "Warning";
 "Backup" setMarkerColor "ColorRed";																														
 "Backup" setMarkerText "Officer Requested Backup Here!";	
 "Backup" setMarkerPos getPos _civ;
-format['if(iscop) then {player sideChat "%1 (%2) Has Hit Their Panic Button, They Need Immediate Backup! Their location has been marked on the map via a map marker! GRID: %3"}',name _civ, _civ, _gridPos] call network_broadcast;
-('if(iscop) then {playsound "beepsimple";}') call network_broadcast;
+format['if(dtk_cop) then {player sideChat "%1 (%2) Has Hit Their Panic Button, They Need Immediate Backup! Their location has been marked on the map via a map marker! GRID: %3"}',name _civ, _civ, _gridPos] call network_broadcast;
+('if(dtk_cop) then {playsound "beepsimple";}') call network_broadcast;
 player sidechat "Your Panic Button is now disabled. It will be available in 60 seconds.";
 backupavailable = false;
 sleep 61;

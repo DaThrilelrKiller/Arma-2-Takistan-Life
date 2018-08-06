@@ -1,4 +1,4 @@
-
+﻿
 private ["_amount","_data","_item","_to","_name"];
 _data = (lbData [1502, (lbCurSel 1502)]);
 _to = (call compile lbData [2100, lbCurSel 2100]select 1);

@@ -1,4 +1,4 @@
-_this = _this select 3;
+﻿_this = _this select 3;
 _art  = _this select 0;
 
 if (_art == "steuernMayor") then 

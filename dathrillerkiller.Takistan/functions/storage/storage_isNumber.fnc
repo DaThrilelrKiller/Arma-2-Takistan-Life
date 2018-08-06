@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_isNumber.sqf
 Desc: Checks if _this is a intiger if not returns false
 Author: DaThrillerKiller -PureGaming Founder

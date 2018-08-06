@@ -1,4 +1,4 @@
-private ["_to"];
+﻿private ["_to"];
 _to = _this select 0;
 
 if (typeName _to == "STRING" && {_to == "ALL"})then

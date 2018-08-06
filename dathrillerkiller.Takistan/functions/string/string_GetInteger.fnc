@@ -1,4 +1,4 @@
-private["_arr", "_i", "_num", "_isNumber", "_KommataCount", "_result", "_reString"];
+﻿private["_arr", "_i", "_num", "_isNumber", "_KommataCount", "_result", "_reString"];
 
 _isNumber = true;
 _result   = -1;	

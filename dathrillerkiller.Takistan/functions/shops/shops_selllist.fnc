@@ -1,4 +1,4 @@
-private ["_magazines","_item","_infos","_preisOhneTax","_preis","_name","_type","_calssname","_index","_mags","_vehicle","_vclClass","_j","_weps","_sort","_vehicles"];
+﻿private ["_magazines","_item","_infos","_preisOhneTax","_preis","_name","_type","_calssname","_index","_mags","_vehicle","_vclClass","_j","_weps","_sort","_vehicles"];
 
 lbClear 301;
 _sort = lbText [2101, (lbCurSel 2101)];

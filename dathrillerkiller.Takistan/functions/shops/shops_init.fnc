@@ -1,4 +1,4 @@
-if (dtk_server)exitWith {};
+﻿if (dtk_server)exitWith {};
 
 private ["_data","_img","_text"];
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_amount.sqf
 Desc: returns how much of a specfic item are in a inventoy
 Author: DaThrillerKiller -PureGaming Founder

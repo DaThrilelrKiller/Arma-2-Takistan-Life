@@ -1,4 +1,4 @@
-[
+﻿[
 "marker",
 "respawn",
 "setPos",
@@ -7,5 +7,8 @@
 "terminate",
 "drag",
 "Effect",
-"revive"
+"revive",
+"init",
+"medic",
+"near"
 ];

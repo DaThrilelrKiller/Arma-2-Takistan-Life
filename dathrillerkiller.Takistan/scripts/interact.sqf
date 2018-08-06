@@ -1,4 +1,4 @@
-_array = _this select 3;
+﻿_array = _this select 3;
 _art   = _array select 0;
 
 if (_art == "civmenu") then 

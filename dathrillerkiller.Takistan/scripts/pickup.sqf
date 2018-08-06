@@ -1,4 +1,4 @@
-private ["_object","_item","_tamount","_name","_infos","_itemweight","_ownweight","_amount","_exitvar","_time","_n"];
+﻿private ["_object","_item","_tamount","_name","_infos","_itemweight","_ownweight","_amount","_exitvar","_time","_n"];
 
 if(pickingup)exitwith{systemChat  "You Already Have Picked Up An Item!"};
 pickingup = true;

@@ -1,4 +1,4 @@
-module_checkpoint = true;
+﻿module_checkpoint = true;
 
 /*DeadDem*/
 AM_classnames_total = 

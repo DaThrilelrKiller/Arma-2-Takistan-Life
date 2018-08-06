@@ -1,4 +1,4 @@
-private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_name","_target"];
+﻿private ["_text","_img","_display","_control","_h","_pos","_maxDist","_dist","_name","_target"];
 
 disableSerialization;
 _target = _this select 0;

@@ -1,4 +1,4 @@
-private["_art","_item","_zunah","_rolepos","_roledir","_pos"];
+﻿private["_art","_item","_zunah","_rolepos","_roledir","_pos"];
 _art = _this select 0;
  
 if (_art == "use") then 

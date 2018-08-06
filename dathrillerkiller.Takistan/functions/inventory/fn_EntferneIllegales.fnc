@@ -1,4 +1,4 @@
-private["_Fhasnvgoogles", "_Fhasbinoculars"];
+﻿private["_Fhasnvgoogles", "_Fhasbinoculars"];
    _Fhasnvgoogles  = 0;
    if (player hasWeapon "NVGoggles") then {_Fhasnvgoogles = 1; };
    _Fhasbinoculars = 0;

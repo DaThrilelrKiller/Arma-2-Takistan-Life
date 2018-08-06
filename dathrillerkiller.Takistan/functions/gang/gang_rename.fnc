@@ -1,13 +1,13 @@
-private ["_name","_gangs","_gang","_index","_locked","_members"];
+﻿private ["_name","_gangs","_gang","_index","_locked","_members"];
 
 
-_name = (ctrlText 5);
+_name = _this select 0;
 _gangs = gangs getVariable ["Names",[]];
 
 /* checks for invalid names */
-if (_name == "Names")exitWith {systemchat "That name cannot be used"};
+if (_name == "Names" || (_name in dtk_notAllowed))exitWith {systemchat "That name cannot be used"};
 if (_name in _gangs)exitWith {systemchat "Gang already exsist"};
-if (_name == _locktext)exitWith {systemchat "That name cannot be used"};
+
 
 /* grabs old gang info */
 _gang = player call gang_name;
@@ -29,5 +29,7 @@ gangs setVariable [format["%1_locked",_gang],_locked,true];
 
 systemchat format ["%1 has been renamed to %2",_gang,_name];
 
-closeDialog 0;
-call gang_open;
+if (dialog)then {
+	closeDialog 0;
+	call gang_open;
+};

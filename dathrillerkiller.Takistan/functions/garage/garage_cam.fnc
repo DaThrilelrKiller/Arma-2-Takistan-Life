@@ -1,4 +1,4 @@
-private ["_pos","_camera"];
+﻿private ["_pos","_camera"];
 
 _pos = (getPosATL (vehicle player));
 _camera = "camera" camCreate _pos;

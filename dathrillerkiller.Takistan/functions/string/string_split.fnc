@@ -1,4 +1,4 @@
-private ["_Array","_temp","_split","_return","_splitwhere"];
+﻿private ["_Array","_temp","_split","_return","_splitwhere"];
 _Array = toArray (_this select 0);
 _splitwhere = toArray (_this select 1)select 0;
 _Array set [count _Array,_splitwhere];

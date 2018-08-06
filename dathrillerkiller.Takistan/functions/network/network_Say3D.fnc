@@ -1,4 +1,4 @@
-private ["_object","_sound","_distance"];
+﻿private ["_object","_sound","_distance"];
 
 _object = _this select 0;
 _sound = _this select 1;

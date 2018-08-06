@@ -1,4 +1,4 @@
-
+﻿
 disableSerialization; 
 
 _grid = getMarkerPos lbData [1500, (lbCurSel 1500)];

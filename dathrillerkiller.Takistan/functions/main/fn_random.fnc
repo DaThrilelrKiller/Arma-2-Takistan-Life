@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_random.sqf
 Desc: Returns a random true or false
 Author: DaThrillerKiller -PureGaming Founder

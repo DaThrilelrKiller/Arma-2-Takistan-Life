@@ -1,4 +1,4 @@
-private ["_art","_item","_anzahl","_vcl","_vehiclepimpweapons","_vehiclepimpammos","_hasRearmableWeapon","_rearmWeaponarray","_waffe","_muni"];
+﻿private ["_art","_item","_anzahl","_vcl","_vehiclepimpweapons","_vehiclepimpammos","_hasRearmableWeapon","_rearmWeaponarray","_waffe","_muni"];
 _art = _this select 0;
 
 if (_art == "use") then 

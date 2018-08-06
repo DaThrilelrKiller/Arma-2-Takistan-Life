@@ -1,4 +1,4 @@
-createDialog 'keypress_dialog';
+﻿createDialog 'keypress_dialog';
 
 {
 	lbAdd [2100,(_x select 0)];

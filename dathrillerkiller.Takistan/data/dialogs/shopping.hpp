@@ -1,4 +1,4 @@
-class shopping
+﻿class shopping
 {
 	idd = 24;
 	movingEnable = false;

@@ -1,4 +1,4 @@
-_Arr1 = [];
+﻿_Arr1 = [];
 
 for [{_i=0}, {_i < (count INV_FarmItemArray)},{_i=_i+1}] do {_Arr1 = _Arr1 + [0]}; 
 sleep 10;				
@@ -13,7 +13,7 @@ for "_u" from 0 to 1 step 0 do
 		_added  = (_Arr1 select _i);																																														
 		_isInArea = false;
 
-		if(iscop && {(_arr select 1) == "Unprocessed_LSD"})exitwith{};
+		if(dtk_cop && {(_arr select 1) == "Unprocessed_LSD"})exitwith{};
 		{
 			if (((vehicle player) distance (getMarkerPos (_x select 0))) < (_x select 1)) then {_isInArea = true;};
 			

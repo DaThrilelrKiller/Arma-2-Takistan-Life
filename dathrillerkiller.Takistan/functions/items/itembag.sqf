@@ -1,4 +1,4 @@
-private["_art","_item","_deleted"];
+﻿private["_art","_item","_deleted"];
 _art = _this select 0;
 
 if (_art == "use") then 

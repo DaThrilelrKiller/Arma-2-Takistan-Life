@@ -1,4 +1,4 @@
-if !(SwagDevs) exitWith {true};
+﻿if !(SwagDevs) exitWith {true};
 if (dialog)exitWith {closeDialog 0; true};
 
 createDialog "admin_console";

@@ -1,4 +1,4 @@
-private["_slider","_data"];
+﻿private["_slider","_data"];
 
 while {ctrlVisible 1003} do 
 {

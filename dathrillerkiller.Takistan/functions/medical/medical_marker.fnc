@@ -1,4 +1,4 @@
-_unit = _this select 0;
+﻿_unit = _this select 0;
 _corps = _this select 1;
 
 deleteMarker ("medical_" + name _unit);

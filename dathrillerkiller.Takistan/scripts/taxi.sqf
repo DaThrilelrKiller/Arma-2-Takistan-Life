@@ -1,4 +1,4 @@
-private ["_art"];
+﻿private ["_art"];
 _art = ((_this select 3) select 0);
 
 if (isNil "INV_LocalTaxiKunde" ) then {INV_LocalTaxiKunde = player};

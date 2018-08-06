@@ -1,4 +1,4 @@
-if (isOnRoad shipment_vehicle)then
+﻿if (isOnRoad shipment_vehicle)then
 {
 	shipment_road_time = shipment_road_time + 1;
 }

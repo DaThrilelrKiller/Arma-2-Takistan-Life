@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_kg.sqf
 Desc: returns the weight of a storage
 Author: DaThrillerKiller -PureGaming Founder

@@ -1,4 +1,4 @@
-private ["_target","_n","_i"];
+﻿private ["_target","_n","_i"];
 
 _target = (crew _this) select 0;
 _n 	= 10;

@@ -1,4 +1,4 @@
-private ["_Veh","_play","_VclVar","_UID"];
+﻿private ["_Veh","_play","_VclVar","_UID"];
 _veh = call compile lbData [1, (lbCurSel 1)];
 
 _play = call compile INV_InventarGiveReceiver;

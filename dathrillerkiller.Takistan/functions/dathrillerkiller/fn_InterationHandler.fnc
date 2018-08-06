@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_InterationHandler.sqf
 Desc: Adds Actions to interation menu if conditions are ment
 Author: DaThrillerKiller -PureGaming Founder

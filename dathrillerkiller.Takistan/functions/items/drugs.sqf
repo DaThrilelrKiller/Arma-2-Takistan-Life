@@ -1,4 +1,4 @@
-private["_art","_item","_anzahl","_endeZeit","_position","_weite","_y","_z","_w1","_w2","_w3","_f1","_f2","_f3","_g1","_g2","_g3","_v1","_v2","_v3","_player","_force"];
+﻿private["_art","_item","_anzahl","_endeZeit","_position","_weite","_y","_z","_w1","_w2","_w3","_f1","_f2","_f3","_g1","_g2","_g3","_v1","_v2","_v3","_player","_force"];
 
 _art = _this select 0;
 

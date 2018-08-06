@@ -1,4 +1,4 @@
-_vehicle	= _this select 0;
+﻿_vehicle	= _this select 0;
 _selection	= _this select 1;
 _damage		= _this select 2;
 _shooter	= _this select 3;

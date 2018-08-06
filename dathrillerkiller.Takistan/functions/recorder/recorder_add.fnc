@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: recorder_add.fnc
 Desc: recored data to an array
 Author: DaThrillerKiller -PureGaming Founder

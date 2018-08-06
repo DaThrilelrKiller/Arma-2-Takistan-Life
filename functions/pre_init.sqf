@@ -1,28 +1,31 @@
+call compile preprocessFile '\MPMissions\mission.sqf';
+
 private ["_modules","_functions"];
 PG_SSF = [];
 
 dtk_server_modules = 
 [
+"Map",
 "Statsave",
 "OwlEye",
 "Robbery",
-"Map",
 "Setup",
-"Drugs",
 "Gang",
 "Impound",
 "Core",
-"Disconnect"
+"Disconnect",
+"Hunting",
+"War"
 ];
 
 /*loads variables first for all active modules*/
 {
-	call compile format['call compile preprocessFile "\MPMissions\functions\%1\_module.variables";', _x ];
+	call compile preprocessFile format ["\MPMissions\functions\%1\_module.variables", _x ];
 }count dtk_server_modules;
 
 /*loads module functions*/ 
 {
-	_functions = call compile format['call compile preprocessFile "\MPMissions\functions\%1\_module.functions";', _x];
+	_functions = call compile preprocessFile format["\MPMissions\functions\%1\_module.functions", _x];
 	_module = _x;
 	{
 		_name = _x select 0;
@@ -37,5 +40,3 @@ dtk_server_modules =
 		};
 	}forEach _functions;
 }count dtk_server_modules;
-
-call compile preprocessFile "\MPMissions\mission.sqf";

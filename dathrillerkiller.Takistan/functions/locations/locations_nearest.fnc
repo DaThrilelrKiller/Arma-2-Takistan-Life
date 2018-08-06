@@ -1,4 +1,4 @@
-private ["_test","_return"];
+﻿private ["_test","_return"];
 
 _test = (nearestLocations [position player, ["Name","NameVillage","NameCityCapital","NameLocal","RockArea"], 320])select 0;
 if (!isNil "_test") then {

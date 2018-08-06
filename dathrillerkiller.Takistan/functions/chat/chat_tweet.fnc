@@ -1,4 +1,4 @@
-_color = (chat_channels select dtk_active_chat  select 3);
+﻿_color = (chat_channels select dtk_active_chat  select 3);
 _condition = (chat_channels select dtk_active_chat  select 1);
 
 _tag = call chat_tag;

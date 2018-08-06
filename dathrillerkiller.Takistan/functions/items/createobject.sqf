@@ -1,4 +1,4 @@
-private ["_art","_item","_class","_exitvar","_pos","_obj","_time","_counter"];
+﻿private ["_art","_item","_class","_exitvar","_pos","_obj","_time","_counter"];
 _art = _this select 0;
 
 if (_art == "use") then 

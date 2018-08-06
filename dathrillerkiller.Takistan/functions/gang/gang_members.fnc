@@ -1,4 +1,4 @@
-private ["_idc","_gang","_members","_name","_rank","_index"];
+﻿private ["_idc","_gang","_members","_name","_rank","_index"];
 
 _idc = _this select 0;
 _gang = _this select 1;

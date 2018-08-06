@@ -1,4 +1,4 @@
-private ["_holster","_weapon","_holstered","_name"];
+﻿private ["_holster","_weapon","_holstered","_name"];
 
 _holster = _this select 0;
 _weapon = (weaponState player)select 0;

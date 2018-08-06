@@ -1,4 +1,4 @@
-private ["_near","_locations","_marker"];
+﻿private ["_near","_locations","_marker"];
 
 v_oil_loc = [];
 

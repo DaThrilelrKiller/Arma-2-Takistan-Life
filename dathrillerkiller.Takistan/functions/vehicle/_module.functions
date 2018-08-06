@@ -1,4 +1,4 @@
-[
+﻿[
 "handleDamage",
 "getDamage",
 "name",
@@ -9,5 +9,6 @@
 "upgrade",
 "init",
 "cruiseControl",
-"trunk"
+"trunk",
+"texture"
 ];

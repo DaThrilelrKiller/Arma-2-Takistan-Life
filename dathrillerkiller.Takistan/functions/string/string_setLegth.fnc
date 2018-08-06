@@ -1,4 +1,4 @@
-private ["_string","_lenght","_array"];
+﻿private ["_string","_lenght","_array"];
 
 _string = _this select 0;
 _lenght = _this select 1;

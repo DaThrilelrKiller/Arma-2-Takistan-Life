@@ -1,4 +1,4 @@
-private ["_key","_return"];
+﻿private ["_key","_return"];
 
 _key = _this;
 if (typeName _key == "SCALAR")exitWith {_key};

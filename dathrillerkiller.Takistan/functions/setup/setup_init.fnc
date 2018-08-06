@@ -1,4 +1,4 @@
-dtk_active_modules = dtk_active_modules - ["setup"];
+﻿dtk_active_modules = dtk_active_modules - ["setup"];
 
 {
 	if (!isNil format["%1_init",_x] && {_x != "Setup"})then {

@@ -1,4 +1,4 @@
-private ["_camera"];
+﻿private ["_camera"];
 _camera = call garage_cam;
 
 titleText ["Collecting the Payment", "PLAIN"];

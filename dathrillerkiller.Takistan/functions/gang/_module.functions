@@ -1,4 +1,4 @@
-[
+﻿[
 "create",
 "invite",
 "join",
@@ -16,5 +16,6 @@
 "setRank",
 "refresh",
 "actions",
-"init"
+"init",
+"getMembers"
 ];

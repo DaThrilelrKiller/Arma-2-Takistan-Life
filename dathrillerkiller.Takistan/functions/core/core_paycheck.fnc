@@ -1,4 +1,4 @@
-private ["_income","_condition","_money"];
+﻿private ["_income","_condition","_money"];
 
 _income = 0;
 
@@ -13,8 +13,8 @@ _money = _x select 1;
 	true
 }count ar_paychecks;
 
-if (!isNil "kontostand")then {
-	kontostand = kontostand + _income;
+if (!isNil "dtk_bank")then {
+	dtk_bank = dtk_bank + _income;
 };
 
 [format ["%1 you recived a paycheck of %2$",(name player),_income],'\CA\misc\data\icons\picture_money_CA']call tag_notify;

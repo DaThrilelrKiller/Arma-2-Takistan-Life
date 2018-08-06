@@ -1,4 +1,4 @@
-if (dtk_server)then {
+﻿if (dtk_server)then {
 [900,goverment_winner]call core_AddLoop;
 
 }else{

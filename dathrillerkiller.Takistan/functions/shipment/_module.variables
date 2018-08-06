@@ -1,4 +1,4 @@
-module_shipments= true;
+﻿module_shipments= true;
 shipment_vehicle = objNull;
 shipment_road_time = 0;
 shipment_offroad_time = 0;

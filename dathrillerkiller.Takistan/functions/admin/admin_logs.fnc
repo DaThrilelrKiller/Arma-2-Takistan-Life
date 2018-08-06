@@ -1,4 +1,4 @@
-private ["_name","_log","_index"];
+﻿private ["_name","_log","_index"];
 admin_selected = 7;
 createDialog "admin_logs";
 [2100, true] call dtk_PlayerListToControl;

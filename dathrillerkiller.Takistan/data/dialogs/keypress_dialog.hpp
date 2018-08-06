@@ -1,4 +1,4 @@
-class keypress_dialog
+﻿class keypress_dialog
 {
 	idd = 154;
 	movingEnable = true;

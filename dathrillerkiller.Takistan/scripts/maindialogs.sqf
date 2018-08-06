@@ -1,4 +1,4 @@
-_array = _this select 3;
+﻿_array = _this select 3;
 _art   = _array select 0;
 _geld  = [player,"geld"] call storage_amount;
 _zusatzString = "";

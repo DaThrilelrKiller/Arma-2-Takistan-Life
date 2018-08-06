@@ -1,4 +1,4 @@
-module_shops = true;
+﻿module_shops = true;
 
 dtk_shopactive = false;
 dtk_activeShopNumber = 10000;

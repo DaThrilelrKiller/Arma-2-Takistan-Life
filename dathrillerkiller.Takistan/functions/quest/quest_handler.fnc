@@ -1,4 +1,4 @@
-
+﻿
 if (time > v_questtime)then {
 	i_quest call core_removeLoop;
 	v_questitems = [];

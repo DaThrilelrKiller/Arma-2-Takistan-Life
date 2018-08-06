@@ -1,4 +1,4 @@
-private ["_vehicle","_upgrade"];
+﻿private ["_vehicle","_upgrade"];
 
 _vehicle = (vehicle player);
 

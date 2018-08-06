@@ -1,4 +1,4 @@
-class camera_dialog
+﻿class camera_dialog
 {
 	idd = 158;
 	class ControlsBackground

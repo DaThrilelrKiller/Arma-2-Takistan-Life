@@ -1,4 +1,4 @@
-private ["_name","_unit","_owners","_uid","_location"];
+﻿private ["_name","_unit","_owners","_uid","_location"];
 
 _name = _this select 0;
 _unit = _this select 1;

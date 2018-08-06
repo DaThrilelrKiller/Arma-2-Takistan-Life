@@ -1,4 +1,4 @@
-createDialog "admin_vehicles";
+﻿createDialog "admin_vehicles";
 admin_selected = 6;
 [2100, true] call dtk_PlayerListToControl;
 call admin_load;

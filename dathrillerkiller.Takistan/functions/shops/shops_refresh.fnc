@@ -1,4 +1,4 @@
-private["_text"];
+﻿private["_text"];
 _text = lbText [2100, (lbCurSel 2100)];
 
 _text call {

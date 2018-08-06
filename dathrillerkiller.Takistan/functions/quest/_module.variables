@@ -1,4 +1,4 @@
-module_quest = true;
+ï»¿module_quest = true;
 v_questitems = [];
 v_questtime = 0;
 v_quest = 
@@ -25,7 +25,7 @@ v_quest =
 	[
 		"Start Hunting or get Hunted",
 		[
-			"Oh not much goes on out here, buddy. I run tru de snow, dey shoot de guns. I always get away. Buncha hosers in orange don’t bother me none.",
+			"Oh not much goes on out here, buddy. I run tru de snow, dey shoot de guns. I always get away. Buncha hosers in orange donï¿½t bother me none.",
 			"boar",
 			"rawcow",
 			"cowmeat",

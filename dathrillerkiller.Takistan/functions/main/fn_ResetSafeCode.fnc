@@ -1,4 +1,4 @@
-private ["_randomCodes","_randomCodeSelected"];
+﻿private ["_randomCodes","_randomCodeSelected"];
 
 safeCodeSet = 0;
 _randomCodeGen		= floor(random 100);

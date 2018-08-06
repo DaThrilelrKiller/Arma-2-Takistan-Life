@@ -1,4 +1,4 @@
-private ["_name"];
+﻿private ["_name"];
 
 _name = player call gang_name;
 if (_name != "")then {

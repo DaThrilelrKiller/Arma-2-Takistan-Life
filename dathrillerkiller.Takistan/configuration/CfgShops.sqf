@@ -22,7 +22,7 @@ _ts = ["Ural_TK_CIV_EP1", "V3S_Open_TK_CIV_EP1", "V3S_Repair_TK_GUE_EP1", "V3S_R
 
 _as = ["AH6X_EP1","An2_1_TK_CIV_EP1","C130J_US_EP1","V3S_Repair_TK_GUE_EP1","V3S_Refuel_TK_GUE_EP1","TowingTractor","Mi17_Civilian","Ka137_PMC","MH6J_EP1","BAF_Merlin_HC3_D","MV22"];
 
-_ms = ["Pickaxe","JackHammer"];
+_ms = ["Pickaxe","JackHammer","woodaxe"];
 
 _rs = ["Platinum","Gold","Silver","Rubies","iron","copper","steel","glass"];
 
@@ -34,9 +34,9 @@ _db1 = ["Cannabis","cocaine","lsd"];
 _db2 = ["cocaine","lsd"];
 _db3 = ["heroin","Cannabis"];
 
-_dsc = ["cocaine","cocaineseed"];
-_dsm = ["marijuana","marijuanaseed"];
-_dsh = ["heroin","heroinseed"];
+_dsc = ["cocaine"];
+_dsm = ["marijuana"];
+_dsh = ["heroin"];
 
 _dsl = ["lsd"];
 
@@ -121,24 +121,19 @@ _copshop        =
 	"copreparaturkit",
 	"kanister",
 	"medikit",
-	"SmokeShell"
+	"SmokeShell",
+	"brush"
 ];
 
 _copshop_patrol =
 [
-	"copUni",
-	"towingtool",
-	"roadblock",
-	"RoadBarrier",
-	"bargate",
-	"SearchLight_US_EP1",
-	"roadcone",
-	"bunkersmall",
+	"copUni0",
 	"Spikestrip",
 	"Sign_Checkpoint_US_EP1",
 	"Land_CamoNetVar_NATO_EP1",
 	"Land_HBarrier5",
-	"Hedgehog_EP1"
+	"Hedgehog_EP1",
+	"brush"
 ];
 
 _copshop_response = [
@@ -152,7 +147,8 @@ _copshop_response = [
 	"30rnd_9x19_MP5SD",
 	"glock17_EP1_COP",
 	"Rnd_9x19_glock17",
-	"vclammo"
+	"vclammo",
+	"brush"
 ];
 
 _copshop_SCO =
@@ -248,18 +244,7 @@ _uns =
 	"supgrade",
 	"towingtool",
 	"SmokeShell",
-	"Spikestrip",
-	"Sign_Checkpoint_US_EP1",
-	"roadblock",
-	"bargate",
-	"RoadBarrier",
-	"SearchLight_US_EP1",
-	"roadcone",
-	"Land_HBarrier5",
-	"Land_CamoNetVar_NATO_EP1",
-	"bunkersmall",
-	"Hedgehog_EP1",
-	"CampEast_EP1"
+	"Spikestrip"
 ];
 
 _unms        =
@@ -494,10 +479,17 @@ _LummberMill =
 "treeseed"
 ];
 
+_is = [
+	 "Bread",
+	 "rabbit",
+	 "boar",
+	 "medikit",
+	 "lighter"
+ ];
+
 _terrorairlist = [];
 
 INV_ItemShops = [
-[assassinshop,["","Assassin Shop"],assassinshop,dummyobj,_ass,_ass,true,{dtk_civ}],
 [insure,["","Insurance"],insure,dummyobj,_ins, _empty,false,{true}],
 [lumbermill,["","Lumber Mill"],lumbermill,dummyobj,[],_LummberMill,false,{dtk_civ}],
 [BuildingCollapesLogic,["","SFG App Store"],dummyobj,dummyobj,"AppStoreArray","AppStoreArray",false,{true}],
@@ -510,60 +502,63 @@ INV_ItemShops = [
 [gasstation6,["Gas pump","JimBobs Fuel Station"],dummyobj,dummyobj,_fs,_fs,true,{true}],
 [gasstation7,["Gas pump","Fast Fuel"],dummyobj,dummyobj,_fs,_fs,true,{true}],
 [northsupermarket,["Gas pump","Tuckers Fuel"],dummyobj,dummyobj,_fs,_fs,true,{true}],
-[gasstation8,["Gas pump","Fuel-station Shop"],dummyobj,dummyobj,_fs,_fs,true,{true}],
-[gasstation9,["Gas pump","Fuel-station Shop"],dummyobj,dummyobj,_fs,_fs,true,{true}],
-[shop1,["truck","Item Shop"],dummyobj,dummyobj,_empty,_empty,true,{true}],
-[shop2,["truck","Item Shop"],dummyobj,dummyobj,_empty,_empty,true,{true}],
-[shop3,["truck","Item Shop"],dummyobj,dummyobj,_empty,_empty,true,{true}],
+[gasstation8,["Gas pump","Cum & Go"],dummyobj,dummyobj,_fs,_fs,true,{true}],
+[gasstation9,["Gas pump","Get Gas Fast"],dummyobj,dummyobj,_fs,_fs,true,{true}],
+[shop1export,["","Item Shop"],dummyobj,dummyobj,_is,_is,true,{true}],
+[shop1,["","Item Shop"],dummyobj,dummyobj,_is,_is,true,{true}],
+[shop2,["","Item Shop"],dummyobj,dummyobj,_is,_is,true,{true}],
+[shop3,["","Item Shop"],dummyobj,dummyobj,_is,_is,true,{true}],
+[shop2export,["","Item Shop"],dummyobj,dummyobj,_is,_is,true,{true}],
 [carshop1,["Car","Car Shop"],dummyobj,carspawn1,_cs,_cs,true,{true}],
 [carshop2,["Car","Car Shop"],dummyobj,carspawn2,_cs,_cs,true,{true}],
 [carshop3,["Car","Car Shop"],dummyobj,carspawn3,_cs,_cs,true,{true}],
 [carshop4,["Car","Car Shop"],dummyobj,carspawn4,_cs,_cs,true,{true}],
 [truckshop,["truck","Truck Shop"],dummyobj,truckspawn,_ts,_ts,true,{true}],
 [truckshop2,["truck","Truck Shop"],dummyobj,truckspawn2,_ts,_ts,true,{true}],
-[pub1,["pub","Pub"],dummyobj,dummyobj,_pub,_pub,true,{true}],
+[pub1,["pub","Taksitan Pub"],dummyobj,dummyobj,_pub,_pub,true,{true}],
 [gunshop1,["Rifle","Gun Shop"],gunbox1,dummyobj,_gs,_gs,true,{true}],
 [equipshop1,["tools","Equipment Shop"],equipbox,dummyobj,_es,_es,true,{true}],
 [airshop,["heli","Air Shop"],dummyobj,asairspawn,_as,_as,true,{true}],
 [airshop_1,["heli","Loy Manara Air Shop"],dummyobj,"asairspawn_1",_as,_as,true,{true}],
-[Oil_1,["tools","Mining equipment"],dummyobj,dummyobj,_ms,_ms,true,{true}],
+[Oil_1,["tools","Mining equipment / Oil Processing"],dummyobj,dummyobj,_ms,_ms,true,{true}],
 [resourcesell,["","Sell Resources"],dummyobj,dummyobj,_rs,_rs,true,{true}],
 [RingShop,["","Ring Sell"],dummyobj,dummyobj,_gds,_gds,true,{true}],
 [OilSell1,["oil","Oil Dealer"],dummyobj,dummyobj,_empty,_os,true,{true}],
-[gangarea1,["Rifle","Gang Shop"],gangbox1,dummyobj,_gangshop_buy,_gangshop_buy,false,{true}],
-[gangarea2,["Rifle","Gang Shop"],gangbox2,dummyobj,_gangshop_buy,_gangshop_buy,false,{true}],
-[gangarea3,["Rifle","Gang Shop"],gangbox3,dummyobj,_gangshop_buy,_gangshop_buy,false,{true}],
+[gangarea1,["Rifle","Gang Shop"],gangbox1,dummyobj,_gangshop_buy,_gangshop_buy,false,{dtk_civ}],
+[gangarea2,["Rifle","Gang Shop"],gangbox2,dummyobj,_gangshop_buy,_gangshop_buy,false,{dtk_civ}],
+[gangarea3,["Rifle","Gang Shop"],gangbox3,dummyobj,_gangshop_buy,_gangshop_buy,false,{dtk_civ}],
 [cdrugsell,["Cocaine","Sell Cocaine"],dummyobj,dummyobj,_dsc,_dsc,true,{true}],
 [mdrugsell,["Marijuana","Sell marijuana"],dummyobj,dummyobj,_dsm,_dsm,true,{true}],
 [ldrugsell,["","Sell LSD"],dummyobj,dummyobj,_dsl,_dsl,true,{true}],
-[hdrugsell,["","Sell Heroin"],dummyobj,dummyobj,_dsh,_dsh,true,{true}],
-[copcar,["PD","Police vehicle Shop"],dummyobj,ccarspawn,_cv,_cv,true,{true}],
-[copair,["heli","Police Air-Vehicle Shop"],dummyobj,cairspawn,_ca,_ca,true,{true}],
-[swatcar,["PD","SCO Vehicle Shop"],dummyobj,scarspawn,_sv,_sv,true,{true}],
-[swatair,["PD","SCO Air Vehicles Shop"],dummyobj,saairspawn,_sa,_sa,true,{true}],
-[unmemshop,["PD","UN Member Shop"],dummyobj,uncarspawn,_unmemshop,_unmemshop,true,{true}],
-[uncar,["PD","UN Vehicle Shop"],dummyobj,uncarspawn,_unveh,_unveh,true,{true}],
-[unair,["PD","UN Air Shop"],dummyobj,unairspawn,_unair,_unair,true,{true}],
-[unbox,["PD","UN Equipment"],unbox,dummyobj,_uns,_uns,true,{true}],
-[unmembox,["PD","UN Equipment"],unmembox,dummyobj,_unms,_unms,true,{true}],
-[copbasic,["PD","Police Shop"],copbasic,dummyobj,_copshop,_copshop,true,{true}],
-[coppatrol,["PD","Patrol Officers"],coppatrol,dummyobj,_copshop_patrol,_copshop_patrol,true,{true}],
-[copcriminal,["PD","Advanced Officers"],copcriminal,dummyobj,_copshop_response,_copshop_response,true,{true}],
-[copswat,["PD","SCO19"],copswat,dummyobj,_copshop_SCO,_copshop_SCO,true,{true}],
-[terrorvehicles33,["Car","Terrorist vehicles"],dummyobj,tairspawn,_terrorvehicles,_terrorvehicles,true,{true}],
-[terrorshop,["","Terrorist Shop"],tgunbox,dummyobj,_terrorshop_buy,_terrorshop_buy,true,{true}],
-[mayorveh,["","Prime Minister Vehicles"],dummyobj,mayorvehspawn,_mayorveh,_mayorveh,true,{true}],
-[mayorbox,["","Prime Minister Shop"],mayorbox,dummyobj,_mayorbox,_mayorbox,true,{true}],
+[hdrugsell,["","Sell Heroin"],dummyobj,dummyobj,_dsh,_dsh,true,{dtk_cop}],
+[copcar,["PD","Police vehicle Shop"],dummyobj,ccarspawn,_cv,_cv,true,{dtk_cop}],
+[copair,["heli","Police Air-Vehicle Shop"],dummyobj,cairspawn,_ca,_ca,true,{dtk_cop}],
+[swatcar,["PD","SCO Vehicle Shop"],dummyobj,scarspawn,_sv,_sv,true,{dtk_cop}],
+[swatair,["PD","SCO Air Vehicles Shop"],dummyobj,saairspawn,_sa,_sa,true,{dtk_cop}],
+[unmemshop,["PD","UN Member Shop"],dummyobj,uncarspawn,_unmemshop,_unmemshop,true,{dtk_un}],
+[uncar,["PD","UN Vehicle Shop"],dummyobj,uncarspawn,_unveh,_unveh,true,{dtk_un}],
+[unair,["PD","UN Air Shop"],dummyobj,unairspawn,_unair,_unair,true,{dtk_un}],
+[unbox,["PD","UN Equipment"],unbox,dummyobj,_uns,_uns,true,{dtk_un}],
+[unmembox,["PD","UN Equipment"],unmembox,dummyobj,_unms,_unms,true,{dtk_un}],
+[copbasic,["PD","Police Shop"],copbasic,dummyobj,_copshop,_copshop,true,{dtk_cop}],
+[coppatrol,["PD","Patrol Officers"],coppatrol,dummyobj,_copshop_patrol,_copshop_patrol,true,{dtk_cop}],
+[copcriminal,["PD","Advanced Officers"],copcriminal,dummyobj,_copshop_response,_copshop_response,true,{dtk_cop}],
+[copswat,["PD","SCO19"],copswat,dummyobj,_copshop_SCO,_copshop_SCO,true,{dtk_cop}],
+[terrorvehicles33,["Car","Terrorist vehicles"],dummyobj,tairspawn,_terrorvehicles,_terrorvehicles,true,{dtk_civ}],
+[terrorshop,["","Terrorist Shop"],tgunbox,dummyobj,_terrorshop_buy,_terrorshop_buy,true,{dtk_civ}],
+[mayorveh,["","Prime Minister Vehicles"],dummyobj,mayorvehspawn,_mayorveh,_mayorveh,true,{dtk_civ}],
+[mayorbox,["","Prime Minister Shop"],mayorbox,dummyobj,_mayorbox,_mayorbox,true,{dtk_civ}],
 [equipshop2,["tools","Equipment Shop"],equipbox2,dummyobj,_es,_es,true,{true}],
 [memshop,["","Member Shop"],membox2,dummyobj,_memshop,_memshop,true,{true}],
-[southveh,["","South Government Vehicles"],dummyobj,soucarspawn,_souveh,_souveh,true,{true}],
-[southair,["heli","South Government Air"],dummyobj,souairspawn,_souair,_souair,true,{true}],
+[southveh,["","South Government Vehicles"],dummyobj,soucarspawn,_souveh,_souveh,true,{dtk_civ}],
+[southair,["heli","South Government Air"],dummyobj,souairspawn,_souair,_souair,true,{dtk_civ}],
 [southshop,["","South Government Shop"],southbox,dummyobj,_soushop,_soushop,true,{true}],
 [equipshop3,["tools","Equipment Shop"],equipbox3,dummyobj,_es,_es,true,{true}],
 [coparmed,["","Trained Firearms Officer"],coparmed,cairspawn,_copfo,_copfo,true,{true}],
-[unnco,["","UN NCO Equipment"],unnco,uncarspawn,_unnco,_unnco,true,{true}],
-[clothciv,["Clothing","Clothing Shop"],dummyobj,dummyobj,_civCloth,_civCloth,true,{true}],
-[clothcivbase,["Clothing","Clothing Shop"],dummyobj,dummyobj,_civCloth,_civCloth,true,{true}],
+[unnco,["","UN NCO Equipment"],unnco,uncarspawn,_unnco,_unnco,true,{dtk_un}],
+[clothshop,["Clothing","Clothing Shop"],dummyobj,dummyobj,_civCloth,_civCloth,true,{dtk_civ}],
+[clothshop2,["Clothing","Clothing Shop"],dummyobj,dummyobj,_civCloth,_civCloth,true,{dtk_civ}],
+[clothcivbase,["Clothing","Clothing Shop"],dummyobj,dummyobj,_civCloth,_civCloth,true,{dtk_civ}],
 [pmcshop,["truck","PMC Shop"],pmcbox,dummyobj,_pmcshop,_pmcshop,true,{true}],
 [pmccar,["","PMC Car Shop"],dummyobj,pmccarspawn,_pmccar,_pmccar,true,{true}],
 [pmcair,["heli","PMC Air Shop"],dummyobj,pmcairspawn,_pmcair,_pmcair,true,{true}],

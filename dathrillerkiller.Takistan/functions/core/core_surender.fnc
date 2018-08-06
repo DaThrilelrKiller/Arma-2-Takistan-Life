@@ -1,2 +1,3 @@
-if(vehicle player != player)exitwith{}; 
+﻿if(vehicle player != player)exitwith{}; 
 player playmove "amovpercmstpssurwnondnon";
+true

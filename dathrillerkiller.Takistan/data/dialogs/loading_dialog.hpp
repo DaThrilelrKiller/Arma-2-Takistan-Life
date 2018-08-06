@@ -1,4 +1,4 @@
-class RscLoadingText;
+﻿class RscLoadingText;
 class RscProgress;
 class dtk_loading
 { 

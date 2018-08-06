@@ -27,41 +27,18 @@ switch (_side) do
 			["Main", "adminlevel4"],
 			["Main", "adminlevel3"],
 			["Main", "adminlevel2"],
-			["Main", "SwagDevs"],
-			[_side, "PO1_id"],
-			[_side, "PO2_id"],
-			[_side, "PO3_id"],
-			[_side, "Cpl_id"],
-			[_side, "Sgt_id"],
-			[_side, "Lt_id"],
-			[_side, "Cpt_id"],
-			[_side, "Chief_id"],
-			[_side, "K9_id"],
-			[_side, "PDAviation_id"],
-			[_side, "SWAT_id"],
-			[_side, "CoastGuard_id"],
-			[_side, "Undercover_id"],
-			[_side, "DOC_id"],
-			[_side, "HWP_id"]
+			["Main", "SwagDevs"]
 		];
 	};
     
-    case "EMS": 
+    case "UN": 
 	{
 		_MainArray1 =
 		[
 			["Main", "adminlevel4"],
 			["Main", "adminlevel3"],
 			["Main", "adminlevel2"],
-			["Main", "SwagDevs"],
-			[_side, "EMTBasic_id"],
-			[_side, "EMTAdavnced_id"],
-			[_side, "FF1_id"],
-			[_side, "FF2_id"],
-			[_side, "EMSAirUnit_id"],
-			[_side, "EMSSupervisor_id"],
-			[_side, "EMSCommand_id"],
-			[_side, "EMSChiefs_id"]
+			["Main", "SwagDevs"]
 		];
 	};
 };

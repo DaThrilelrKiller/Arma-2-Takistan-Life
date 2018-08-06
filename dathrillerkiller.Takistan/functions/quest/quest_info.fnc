@@ -1,4 +1,4 @@
-private ["_name","_items","_list"];
+﻿private ["_name","_items","_list"];
 
 if (count v_questitems < 1)exitWith {
 systemchat "you currently have no active quest";

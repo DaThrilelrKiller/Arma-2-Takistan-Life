@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_revive.sqf
 Desc: Used to revive players that are down
 Author: DaThrillerKiller -PureGaming Founder

@@ -1,4 +1,4 @@
-_selection = ((_this select 3)select 0);
+﻿_selection = ((_this select 3)select 0);
 
 _moneyearned = 0;
 _distance = 0;
@@ -37,7 +37,7 @@ while {pmissionactive} do
 		{
 		deleteMarkerLocal "patrolmarker";
 		_moneyearned = (_distance * patrolmoneyperkm);
-		Kontostand = Kontostand + _moneyearned;
+		dtk_bank = dtk_bank + _moneyearned;
 		player sidechat format["You earned $%1 for patroling", _moneyearned];		
 		player sidechat "Please wait a moment for a new patrol point...";
 	

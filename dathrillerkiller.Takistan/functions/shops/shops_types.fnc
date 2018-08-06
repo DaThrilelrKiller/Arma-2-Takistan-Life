@@ -1,4 +1,4 @@
-private ["_kinds","_kind"];
+﻿private ["_kinds","_kind"];
 
 lbadd [2101,"All"];
 

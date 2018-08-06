@@ -1,4 +1,4 @@
-carspawn1 = "Logic"  createVehicleLocal [0,0,0];
+﻿carspawn1 = "Logic"  createVehicleLocal [0,0,0];
 carspawn1 setDir 0;
 carspawn1 setPos [3098.14,9948.01,0];
 carspawn2 = "Logic"  createVehicleLocal [0,0,0];

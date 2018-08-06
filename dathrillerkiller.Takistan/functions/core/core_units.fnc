@@ -1,4 +1,4 @@
-private ["_amount","_return","_i","_id","_class","_name"];
+﻿private ["_amount","_return","_i","_id","_class","_name"];
 
 _amount = getNumber(missionConfigFile >> "MissionSQM" >> "Mission" >> "Groups" >> "items");
 _return = [];

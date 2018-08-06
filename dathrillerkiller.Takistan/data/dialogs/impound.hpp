@@ -1,4 +1,4 @@
-class impound
+﻿class impound
 {
 	idd = -1;
 	

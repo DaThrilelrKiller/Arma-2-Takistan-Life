@@ -1,4 +1,4 @@
-
+﻿
 private ["_Cursel"];
 while {ctrlVisible 1502} do
 {

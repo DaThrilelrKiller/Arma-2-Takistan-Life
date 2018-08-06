@@ -1,4 +1,4 @@
-private ["_selection","_item","_price","_class","_model"];
+﻿private ["_selection","_item","_price","_class","_model"];
 _selection = _this select 0;
 if(isNil "_selection")exitWith{hint "You need to select an item first"};
 AM_temp_carrying = true;
@@ -20,7 +20,7 @@ if ([player,_class] call storage_amount > 0)then
 }
 else
 {
-kontostand = kontostand - _price;
+dtk_bank = dtk_bank - _price;
 };
 systemChat  "You have been charged for buying this. Press 9 to drop it on the ground.";
 

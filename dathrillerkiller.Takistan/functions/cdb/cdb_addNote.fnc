@@ -1,4 +1,4 @@
-private ["_object","_note","_notes","_from"];
+﻿private ["_object","_note","_notes","_from"];
 
 _object = _this select 0;
 _note = _this select 1;

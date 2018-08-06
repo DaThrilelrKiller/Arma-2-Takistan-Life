@@ -1,17 +1,10 @@
-_this = _this select 3;
+﻿_this = _this select 3;
 _art  = _this select 0;
 _safe = _this select 1;
 _safedoor = _this select 2;
 _west = playersNumber west;
 
 if (_west < 1) exitwith {systemChat  "There Must Be At Least 1 ECPD Officer Online To Rob The Bank!";};
-
-if (_art == "robDialog") then
-{
-	if (dialog) exitWith { closeDialog 0; };
-	_ok = createDialog "BankCodeEnterDLG";
-	if ( !_ok ) then { systemChat  "Unable To Open The Bank Safe Dialog!";};
-};
 
 if (_art == "ausrauben") then 
 
@@ -69,64 +62,59 @@ rblock	   = 0;
 
 if (_art == "robstart") then 
 { 
-titleText [localize "STRS_bank_rob_titlemsg", "plain"];
-mainbank say3D "Bank_alarm";
-copbase1 say3D "Bank_alarm";
-copsheriffbank say3D "Bank_alarm";
+	titleText [localize "STRS_bank_rob_titlemsg", "plain"];
+	mainbank say3D "Bank_alarm";
+	copbase1 say3D "Bank_alarm";
+	copsheriffbank say3D "Bank_alarm";
 };
 
 if (_art == "robwrongcode") then 
 { 
-mainbank say3D "Bank_alarm";
-copbase1 say3D "Bank_alarm";
-copsheriffbank say3D "Bank_alarm";
+	mainbank say3D "Bank_alarm";
+	copbase1 say3D "Bank_alarm";
+	copsheriffbank say3D "Bank_alarm";
 };
 
 if (_art == "roberror") then 
 { 
-mainbank say3D "Bank_alarm";
-copbase1 say3D "Bank_alarm";
-copsheriffbank say3D "Bank_alarm";
+	mainbank say3D "Bank_alarm";
+	copbase1 say3D "Bank_alarm";
+	copsheriffbank say3D "Bank_alarm";
 };
 
 
 if (_art == "opfer") then 
-
 {
 
-_robpool = _this select 2;
-															
-sleep 8;
+	_robpool = _this select 2;														
+	sleep 8;
+	systemChat format["The Thief Stole $%1!", _robpool];
+	sleep 4;
+	
+	_percentlost = _robpool/2000000;
+	if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
 
-systemChat format["The Thief Stole $%1!", _robpool];
-
-sleep 4;
-
-_percentlost = _robpool/2000000;
-
-if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
-
-_verlust = round(Kontostand*_percentlost); 
+	_verlust = round(dtk_bank*_percentlost); 
 			
-if ((Kontostand <= _verlust) and (Kontostand >= 1) and (([player,"bankversicherung"] call storage_amount == 0)) then 
+	if ((dtk_bank <= _verlust) and (dtk_bank >= 1) and (([player,"bankversicherung"] call storage_amount == 0)) then 
 
 	{
 																				
-	Kontostand = 0;
+	dtk_bank = 0;
 	systemChat  localize "STRS_bank_rob_allmoneylost";
 
 	};
 					
-if ((Kontostand >  _verlust) and (([player,"bankversicherung"] call storage_amount) == 0)) then 
+	if ((dtk_bank >  _verlust) and (([player,"bankversicherung"] call storage_amount) == 0)) then 
 
 	{ 
 													
-	Kontostand = Kontostand - _verlust;
-	systemChat  format[localize "STRS_bank_rob_somemoneylost", (_verlust call string_intToString), (Kontostand call string_intToString)];
+	dtk_bank = dtk_bank - _verlust;
+	systemChat  format[localize "STRS_bank_rob_somemoneylost", (_verlust call string_intToString), (dtk_bank call string_intToString)];
 
 	};
 															
-if (([player,"bankversicherung"] call storage_amount) > 0) then 
+	if (([player,"bankversicherung"] call storage_amount) > 0) then 
 
 	{		
 

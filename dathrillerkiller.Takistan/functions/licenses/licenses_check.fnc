@@ -1,4 +1,4 @@
-private ["_object","_licenses"];
+﻿private ["_object","_licenses"];
 
 _object = _this select 0;
 _licenses = (_object getvariable "cdb_license");

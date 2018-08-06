@@ -1,4 +1,4 @@
-private ["_data","_type"];
+﻿private ["_data","_type"];
 
 lbClear 303;
 

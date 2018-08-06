@@ -1,4 +1,4 @@
-/*
+﻿/*
 Script: planttree.sqf
 Description: Determines what form of wood you get and how much you get.
 Exec: When Axe is used.
@@ -28,8 +28,8 @@ _foundtree = false;
    
 		_x setdamage 0;  
 
-		[_item, -1] call INV_AddInvItem;
-		["geld", 30] call INV_AddInvItem;
+		[player,_item,-1] call storage_add;
+		[player,"geld",30] call storage_add;
 		 systemChat "you replanted a tree and got $30";
 		
 		_foundtree = true;

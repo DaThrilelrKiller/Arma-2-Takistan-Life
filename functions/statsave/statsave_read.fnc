@@ -1,7 +1,4 @@
 private["_file", "_section", "_key", "_data", "_result","_default"];
-if(count _this < 4) exitwith { 
-	["Inidb: read failed not enough parameter"] call S_statsave_log;
-};
 
 _file = _this select 0;
 _section 	= _this select 1;
@@ -22,5 +19,5 @@ if !(isNil "_result")then
 	_data = "";
 };
 
-_data = [_data,_default] call S_statsave_Datarizer;
+_data = [_data,_default] call s_statsave_datarizer;
 _data;

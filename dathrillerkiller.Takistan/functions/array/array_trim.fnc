@@ -1,4 +1,4 @@
-
+﻿
 _array = _this select 0;
 _amount = _this select 1;
 _index = if (count _this > 2)then {_this select 2}else{0};

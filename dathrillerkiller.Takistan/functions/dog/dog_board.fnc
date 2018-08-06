@@ -1,4 +1,4 @@
-
+﻿
 
 _dog = player getVariable "CLAY_DogUnit";
 player setVariable ["CLAY_DogStatus", "Boarding"];

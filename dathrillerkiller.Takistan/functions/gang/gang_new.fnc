@@ -1,4 +1,4 @@
-createDialog "gang_menu1";
+﻿createDialog "gang_menu1";
 
 call gang_list;
 
@@ -14,5 +14,6 @@ ctrlEnable [8, false];
 ctrlEnable [9, false];
 ctrlEnable [10, false];
 ctrlEnable [11, false];
+ctrlEnable [12, false];
 
 

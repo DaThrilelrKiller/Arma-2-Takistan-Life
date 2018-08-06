@@ -1,4 +1,4 @@
-private ["_object","_storage","_license","_weapons","_magazines"];
+﻿private ["_object","_storage","_license","_weapons","_magazines"];
 _object = _this select 0;
 
 _storage = _object getVariable ["dtk_storage",[[],[]]]select 0;

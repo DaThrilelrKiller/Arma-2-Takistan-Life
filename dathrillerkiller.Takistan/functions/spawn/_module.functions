@@ -1,7 +1,9 @@
-[
+﻿[
 "animatemap",
 "init",
 "menu",
 "openMenu",
-"setPos"
+"setPos",
+"list",
+"changeNation"
 ];

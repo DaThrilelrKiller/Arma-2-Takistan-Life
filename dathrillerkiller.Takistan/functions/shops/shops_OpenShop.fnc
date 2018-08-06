@@ -1,4 +1,4 @@
-private ["_shoparray","_shop","_con"];
+﻿private ["_shoparray","_shop","_con"];
 
 dtk_activeShopNumber    = (_this select 0); 
 _shoparray = (INV_ItemShops select dtk_activeShopNumber);

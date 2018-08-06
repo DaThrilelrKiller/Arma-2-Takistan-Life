@@ -1,4 +1,4 @@
-
+﻿
 shipment_defend_time = time + 90;
 ["true","Weapon Shipment","Defend The Shipment For 1:30 Minutes!"]call Main_Notification;
 

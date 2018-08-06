@@ -1,4 +1,4 @@
-private ["_unit"];
+﻿private ["_unit"];
 if((vehicle player == player) && INV_isArmed) then 
 {
 	_unit = nearestobjects [getposatl player, ["Man"], 2] - [player];

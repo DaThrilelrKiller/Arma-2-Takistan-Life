@@ -1,4 +1,4 @@
-
+﻿
 class animationsdialog
 {
 	idd = -1;

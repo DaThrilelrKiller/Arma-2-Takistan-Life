@@ -1,4 +1,4 @@
-if(AM_temp_carrying)exitWith{[] call Checkpoint_Drop;};
+﻿if(AM_temp_carrying)exitWith{[] call Checkpoint_Drop;};
 	
 createDialog "AM_CheckpointBuilder";
 	

@@ -1,4 +1,4 @@
-private ["_vcl","_fuel","_damage","_rep_count","_damage_val","_fuel_val","_coef","_damage_ok","_fuel_ok","_breaked_out","_breaked_out2","_rep_action"];
+﻿private ["_vcl","_fuel","_damage","_rep_count","_damage_val","_fuel_val","_coef","_damage_ok","_fuel_ok","_breaked_out","_breaked_out2","_rep_action"];
 
 _vcl = _this select 0;
 

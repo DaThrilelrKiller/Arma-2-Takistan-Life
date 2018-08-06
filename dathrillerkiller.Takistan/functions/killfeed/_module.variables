@@ -1,2 +1,2 @@
-module_killfeed = true;
+﻿module_killfeed = true;
 kill_feed = [];

@@ -1,4 +1,4 @@
-class schluessel
+﻿class schluessel
 {
 idd = -1;
 movingEnable = true;

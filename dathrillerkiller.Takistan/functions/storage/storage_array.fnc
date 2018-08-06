@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_array.sqf
 Desc: backend function to add and remove items from the storage
 Author: DaThrillerKiller -PureGaming Founder

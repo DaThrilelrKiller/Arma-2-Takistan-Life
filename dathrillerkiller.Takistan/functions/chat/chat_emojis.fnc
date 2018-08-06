@@ -1,4 +1,4 @@
-_return = "";
+﻿_return = "";
 _text = _this;
 
 {

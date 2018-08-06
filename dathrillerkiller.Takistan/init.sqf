@@ -1,4 +1,4 @@
-diag_log text "[LOG]Post Initialization Started";
+﻿diag_log text "[LOG]Post Initialization Started";
 
 enableSaving [false, false];
 
@@ -19,7 +19,7 @@ startLoadingScreen ["","dtk_loading"];
 if (dtk_client)then {
 	dtk_side = call {
 		if (playerSide == civilian)exitWith {"CIV"};
-		if (playerSide == resistance)exitWith {"EMS"};
+		if (playerSide == resistance)exitWith {"UN"};
 		if (playerSide == west)exitWith {"PD"};
 		"unknown"
 	};

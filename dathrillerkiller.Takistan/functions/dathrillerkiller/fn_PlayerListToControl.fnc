@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_PlayerListToControl.sqf
 Desc: populates a dialog control with a list of players and set the data to the _Foreeachindex and player
 Author: DaThrillerKiller -PureGaming Founder

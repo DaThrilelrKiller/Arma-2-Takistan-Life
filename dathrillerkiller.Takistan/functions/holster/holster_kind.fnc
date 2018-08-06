@@ -1,4 +1,4 @@
-private ["_weapon","_kind","_pistolConfig","_return"];
+﻿private ["_weapon","_kind","_pistolConfig","_return"];
 
 _weapon = _this select 0;
 _kind = _this select 1;

@@ -1,4 +1,4 @@
-private ["_object","_lic","_licenses","_name"];
+﻿private ["_object","_lic","_licenses","_name"];
 
 
 _object = _this select 0;

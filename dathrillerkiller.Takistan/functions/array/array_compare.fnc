@@ -1,4 +1,4 @@
-_array1 = _this select 0;
+﻿_array1 = _this select 0;
 _array2 = _this select 1;
 _return = 0;
 	

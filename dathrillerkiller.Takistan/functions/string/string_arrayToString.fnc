@@ -1,4 +1,4 @@
-private["_str", "_i"];
+﻿private["_str", "_i"];
 
 _str = "";
 

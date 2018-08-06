@@ -1,4 +1,4 @@
-
+﻿
 /*
 	This is meant to be used with the 'daytime' command, for
 	example if 'daytime' was 7.36, '[daytime] call bis_timeToString'

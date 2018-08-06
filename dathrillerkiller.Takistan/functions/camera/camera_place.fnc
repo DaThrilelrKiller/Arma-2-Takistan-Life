@@ -1,4 +1,4 @@
-private ["_pole","_camera","_item","_advanced","_side","_pos","_direction"];
+﻿private ["_pole","_camera","_item","_advanced","_side","_pos","_direction"];
 
 _item = _this select 1;
 _side = _this select 3;

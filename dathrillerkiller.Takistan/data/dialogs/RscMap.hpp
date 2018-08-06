@@ -1,4 +1,4 @@
-		class dtkMap 
+﻿		class dtkMap 
 		{ 
 			access = 0; 
 			idc = 56; 

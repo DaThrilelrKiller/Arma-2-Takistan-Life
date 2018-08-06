@@ -1,4 +1,4 @@
-if (SigningUpForDebitCard) exitWith {systemChat  "You are already signing up for a debit card, please wait until the process is complete."};
+﻿if (SigningUpForDebitCard) exitWith {systemChat  "You are already signing up for a debit card, please wait until the process is complete."};
 
 fn_DebitCardSignupNotification = 
 {

@@ -1,4 +1,4 @@
-module_hunger = true;
+﻿module_hunger = true;
 
 dtk_hunger = 25;
 

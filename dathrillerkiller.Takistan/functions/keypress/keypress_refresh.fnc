@@ -1,4 +1,4 @@
-private ["_cursel","_data","_bools","_key","_shift","_ctrl","_alt","_letter"];
+﻿private ["_cursel","_data","_bools","_key","_shift","_ctrl","_alt","_letter"];
 
 _data = profileNamespace getVariable lbText [1401, (lbCurSel 1401)];
 _data = [_data,"_"] call string_split;

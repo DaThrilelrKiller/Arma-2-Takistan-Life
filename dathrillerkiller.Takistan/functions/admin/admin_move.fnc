@@ -1,4 +1,4 @@
-private ["_object"];
+﻿private ["_object"];
 _object = cursorTarget;
 
 if (isNull admin_move_obj)then

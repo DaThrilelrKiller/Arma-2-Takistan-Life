@@ -1,4 +1,4 @@
-module_core = true;
+﻿module_core = true;
 add_civmoney		 = 1000;
 add_copmoney		 = 5000;
 MayorSteuern             = 0;
@@ -9,13 +9,13 @@ dtk_center = [6500,6500,0];
 
 ar_paychecks = 
 [
-[{iscop},5000],
-[{iscop and Cpl_id},2000],
-[{iscop and Sgt_id},3000],
-[{iscop and Lt_id},10000],
-[{iscop and Cpt_id},15000],
-[{iscop and Chief_id},50000],
-[{isamedic},(5000 + random 2000 - random 2000)],
+[{dtk_cop},5000],
+[{dtk_cop and Cpl_id},2000],
+[{dtk_cop and Sgt_id},3000],
+[{dtk_cop and Lt_id},10000],
+[{dtk_cop and Cpt_id},15000],
+[{dtk_cop and Chief_id},50000],
+[{dtk_un},(5000 + random 2000 - random 2000)],
 [{dtk_civ},add_civmoney]
 ];
 

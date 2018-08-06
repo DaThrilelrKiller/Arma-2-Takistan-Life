@@ -1,4 +1,4 @@
-private ["_license","_name","_cost"];
+﻿private ["_license","_name","_cost"];
 
 _license = ((dtk_licenses select _this) select 0);
 _name    = ((dtk_licenses select _this) select 2);

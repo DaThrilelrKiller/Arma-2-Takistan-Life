@@ -1,4 +1,4 @@
-private ["_amount","_items","_data","_trunk","_upgrade","_weapons","_magazines","_plate","_sirens"];
+﻿private ["_amount","_items","_data","_trunk","_upgrade","_weapons","_magazines","_plate","_sirens"];
 
 lbClear 6;
 lbClear 4;

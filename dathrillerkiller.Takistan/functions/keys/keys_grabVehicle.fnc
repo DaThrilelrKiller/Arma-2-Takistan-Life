@@ -1,4 +1,4 @@
-private ["_cursor","_array","_return"];
+﻿private ["_cursor","_array","_return"];
 
 _vehicle = vehicle player;
 _cursor = cursorTarget;

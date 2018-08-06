@@ -1,4 +1,4 @@
-private ["_vehicle","_number","_ar_siren","_weapon"];
+﻿private ["_vehicle","_number","_ar_siren","_weapon"];
 
 
 _vehicle = (vehicle player);

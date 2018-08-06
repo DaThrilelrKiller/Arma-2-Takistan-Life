@@ -1,4 +1,4 @@
-private ["_vehicle","_name","_lock","_text"];
+﻿private ["_vehicle","_name","_lock","_text"];
 
 _vehicle = _this select 0;
 _vehicle = if !(typeName _vehicle == "OBJECT")then{call keys_grabVehicle}else{_vehicle};

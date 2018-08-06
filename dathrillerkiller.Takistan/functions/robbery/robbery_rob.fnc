@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_Rob.sqf
 Desc: Used to robs stores. Note you must stay at the store to finish robbing or else you wont get any money
 Author: DaThrillerKiller -PureGaming Founder
@@ -26,11 +26,11 @@ if (!(call INV_isArmed)) exitwith
 {
 	1560 cutText ["You need a gun to rob the station!","PLAIN DOWN"];
 	_message3 = format['A sensor alarm at %1 has just gone off!',_name];
-	["ALL",["iscop","Police Dispatch",_message3],"Main_Notification",true,false]call network_MPExec;
+	["ALL",["dtk_cop","Police Dispatch",_message3],"Main_Notification",true,false]call network_MPExec;
 }; 
 
 _message2 = format ['The silent alarm at %1 has gone off, Go investigate!',_name];
-["ALL",["iscop","Police Dispatch",_message2],"Main_Notification",true,false]call network_MPExec;
+["ALL",["dtk_cop","Police Dispatch",_message2],"Main_Notification",true,false]call network_MPExec;
 
 
 robbing = true;
@@ -53,7 +53,7 @@ _place setVariable ["robbery_money",0,true];
 
 
 _message = format ['Someone robbed %1', _name];
-["ALL",["iscop","Police Dispatch",_message],"Main_Notification",true,false]call network_MPExec;
+["ALL",["dtk_cop","Police Dispatch",_message],"Main_Notification",true,false]call network_MPExec;
 
 
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_Notification.sqf
 Desc: Used to display a notification to a player in a organized manner
 Author: DaThrillerKiller -PureGaming Founder
@@ -9,7 +9,7 @@ Instagram: https://www.instagram.com/tuckeeeee
 	Use Without Permission is prohibited
 
 Prams: 
-	0. Condition for the notification to be shown (i.e. iscop)
+	0. Condition for the notification to be shown (i.e. dtk_cop)
 	1. Main lable of the notifiction
 	2. Body of the notification
 	3. sound (leave nil if you want no sound to play)

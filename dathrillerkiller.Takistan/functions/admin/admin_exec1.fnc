@@ -1,4 +1,4 @@
-private ["_text"];
+﻿private ["_text"];
 _text = lbText [1500, (lbCurSel 1500)];
 switch (_text) do
 {

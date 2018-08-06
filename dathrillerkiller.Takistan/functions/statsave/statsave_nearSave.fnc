@@ -1,4 +1,4 @@
-private ["_return","_object","_distance"];
+﻿private ["_return","_object","_distance"];
 
 _object = _this select 0;
 _distance = _this select 1;

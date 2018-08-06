@@ -1,4 +1,4 @@
-_player = player;
+﻿_player = player;
 waitUntil {_player != player};
 
 player addEventHandler ["killed", { _this spawn setup_killed;}];

@@ -1,1 +1,1 @@
-call shops_info;
+﻿call shops_info;

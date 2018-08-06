@@ -1,5 +1,4 @@
-player addEventHandler ["handleDamage", {_this call events_sethit;}];
-player addEventHandler ["fired", {[(_this select 0),(_this select 1), (_this select 4)]call ems_firehose;}];
+﻿player addEventHandler ["handleDamage", {_this call events_sethit;}];
 
 /*On ESC*/
 []spawn events_OnPause;

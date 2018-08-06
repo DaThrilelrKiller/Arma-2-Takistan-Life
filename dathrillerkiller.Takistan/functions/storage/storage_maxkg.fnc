@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_maxkg.sqf
 Desc: returns the max weight the storage can hold
 Author: DaThrillerKiller -PureGaming Founder

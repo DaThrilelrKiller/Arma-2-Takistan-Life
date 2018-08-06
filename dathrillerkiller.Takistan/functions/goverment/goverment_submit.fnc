@@ -1,7 +1,11 @@
-private ["_unit","_votes"];
+﻿private ["_unit","_votes"];
 
 if (lbCurSel 1 == -1)exitWith {
 systemchat "seleced someone to vote for";
+};
+
+if ((ctrlText 67) == "Run For Gov")exitWith {
+	call goverment_run;
 };
 
 

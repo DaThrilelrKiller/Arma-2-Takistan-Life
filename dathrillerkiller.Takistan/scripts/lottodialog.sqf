@@ -1,4 +1,4 @@
-_lottoScheine = (_this select 3);
+﻿_lottoScheine = (_this select 3);
 buttonSetAction [2, "[ lbData[1, (lbCurSel 1)] ] execVM ""scripts\lotto.sqf""; closeDialog 0"];
 
 {

@@ -1,4 +1,4 @@
-
+﻿
 waitUntil {vehicle player != player and (vehicle player) != setup_vehicle};
 setup_vehicle = (vehicle player);
 

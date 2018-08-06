@@ -1,3 +1,7 @@
+﻿if (V_voted)exitwith {
+	systemchat "You already voted you cant acess the voting database until next election";
+};
+
 _data = call goverment_votes;
 createDialog "wahldialog";
 

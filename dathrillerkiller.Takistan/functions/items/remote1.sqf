@@ -1,4 +1,4 @@
-if(player distance countygate <= 30) then 
+﻿if(player distance countygate <= 30) then 
 {
 countygate animate ["innergate",1]; jailgate_in say "fanceopen";
 countygate animate ["outergate",1]; jailgate_in say "fanceopen";

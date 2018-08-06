@@ -1,4 +1,4 @@
-if ((_this select 0) == -1) exitWith {systemChat  localize "STRS_anim_noselect"};
+﻿if ((_this select 0) == -1) exitWith {systemChat  localize "STRS_anim_noselect"};
 if(vehicle player != player) exitWith {hint "You must be on foot"};
 
 

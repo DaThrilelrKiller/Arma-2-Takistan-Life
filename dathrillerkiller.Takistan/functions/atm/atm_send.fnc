@@ -1,4 +1,4 @@
-_action = _this select 0;
+﻿_action = _this select 0;
 
 switch(_action)do
 {
@@ -7,11 +7,11 @@ switch(_action)do
 		_from = _this select 1;
 		if (player != _from)then
 		{
-		Kontostand = Kontostand + _amount;
+		dtk_bank = dtk_bank + _amount;
 		systemchat format ["You recived %1 from %2",_amount];
 
 		}else{
-		Kontostand = Kontostand - _amount;
+		dtk_bank = dtk_bank - _amount;
 		};
 	};
 	default 
@@ -21,7 +21,7 @@ switch(_action)do
 		_amount = parseNumber _amount;
 	
 	
-		if (_amount <= Kontostand)then 
+		if (_amount <= dtk_bank)then 
 		{
 			_to = call compile lbData [2100, lbCurSel 2100];
 			_to = _to select 1;

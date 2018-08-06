@@ -1,4 +1,4 @@
-private ["_vehicle","_uids","_return","_keys","_data"];
+﻿private ["_vehicle","_uids","_return","_keys","_data"];
 
 _vehicle = _this;
 _data = _vehicle getVariable "DTK_OwnerUID";

@@ -1,4 +1,4 @@
-private["_arr", "_i"];	
+﻿private["_arr", "_i"];	
 
 if ((typeName _this) == "STRING") then 
 

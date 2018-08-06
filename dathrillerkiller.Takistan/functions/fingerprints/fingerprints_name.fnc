@@ -1,4 +1,4 @@
-_type = typeOf _this;
+﻿_type = typeOf _this;
 _weapons = getWeaponCargo _this;
 _magizines = getMagazineCargo _this; 
 

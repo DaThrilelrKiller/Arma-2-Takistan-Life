@@ -1,4 +1,4 @@
-private ["_gang","_locked","_text"];
+﻿private ["_gang","_locked","_text"];
 
 /* grabs needed variables */
 _gang = player call gang_name;

@@ -1,4 +1,4 @@
-private ["_amount","_text","_date","_item"];
+﻿private ["_amount","_text","_date","_item"];
 
 _text = lbText [2100, (lbCurSel 2100)];
 

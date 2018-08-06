@@ -1,4 +1,4 @@
-/*
+﻿/*
 Script: choptree.sqf
 Description: Determines what form of wood you get and how much you get.
 Exec: When Axe is used.
@@ -40,7 +40,7 @@ if ((player distance getmarkerpos "forest" < 175) or (player distance getmarkerp
 
 			for "_i" from 0 to _amountchopped step 1 do 
 			{
-				_object = "cl_wood" createVehicle getPos player;
+				_object = "Suitcase" createVehicle getPos player;
 				_object call core_setVarName;	
 				["ALL",[_object,['','scripts\pickup.sqf',[_object, "wood", 1],25,false,true,'LeanRight',format ['!([_target,"Pick up %1 (E)","%2"]call tag_show)',"Wood","data\images\items\lummber"]]],"network_addAction",false,true]call network_MPExec;
 			};

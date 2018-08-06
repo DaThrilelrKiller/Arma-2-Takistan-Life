@@ -1,4 +1,4 @@
-scriptName "Functions\objects\fn_isInFrontOf.sqf";
+﻿scriptName "Functions\objects\fn_isInFrontOf.sqf";
 
 
 /*  Author: Philipp Pilhofer (raedor)

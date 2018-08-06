@@ -1,4 +1,4 @@
-INV_drogenusesperre = 0;
+﻿INV_drogenusesperre = 0;
 INV_drogen_usesperre = FALSE;
 INV_DrogenCounter = 0;
 
@@ -12,7 +12,11 @@ AR_playerString = str player;
 INV_FarmItemArray =
 [
 [[["lsdfield",30]],"Unprocessed_lsd",15,4,["Man"]],
-[[["lsdfield_1",30]],"Unprocessed_lsd",15,4,["Man"]],
+[[["lsdfield_1",30]],"Unprocessed_lsd",15,4,["Man"]], 
+[[["cocainefield_4_1",30]],"Unprocessed_cocaine",20,9,["Man"]],
+[[["herionfield_2",30]],"Unprocessed_Heroin",20,9,["Man"]],
+[[["potfield_3",30]],"Unprocessed_Marijuana",20,9,["Man"]],
+
 [[["DiamondArea",20]],"Diamond rock",15,1,["Man"]],
 [[["farmarea2",90]],"getreide",20,10,["tractor","oldtruc2","oldtruc2a"]],
 [[["farmarea3",90]],"getreide",20,10,["tractor","oldtruc2","oldtruc2a"]],
@@ -22,11 +26,11 @@ INV_FarmItemArray =
 ];
 Miningarray =
 [
-[["IronArea",30],"iron",12],
-[["GoldArea",15],"gold",12],
-[["GoldArea1",15],"gold",12],
-[["CopperArea",30],"copper",12],
-[["CopperArea1",30],"copper",12]
+	[["IronArea",30],"iron",12],
+	[["GoldArea",15],"gold",12],
+	[["GoldArea1",15],"gold",12],
+	[["CopperArea",30],"copper",12],
+	[["CopperArea1",30],"copper",12]
 ];
 
 /*bank Vars*/
@@ -35,7 +39,7 @@ rblock			 = 0;
 stolencash		 = 0;
 Maxbankrobpercentlost    = 0.1; 
 robenable              	 = true;     
-drugsellarray		 = [mdrugsell,cdrugsell,ldrugsell,hdrugsell,methsell];
+drugsellarray		 = [mdrugsell,cdrugsell,ldrugsell,hdrugsell];
 /*Lottery*/
 playing_lotto = 0;
 
@@ -49,36 +53,43 @@ LottoArray =
 
 LottoFlags = 									
 [
-[fuel2,["lotto1", "lotto2", "lotto3", "lotto4"]],
-[fuel4,["lotto1", "lotto2", "lotto3", "lotto4"]],
-[fuel5,["lotto1", "lotto2", "lotto3", "lotto4"]]
+	[gasstation1,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation2,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation3,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation4,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation5,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation6,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation7,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[northsupermarket,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation8,["lotto1", "lotto2", "lotto3", "lotto4"]],
+	[gasstation9,["lotto1", "lotto2", "lotto3", "lotto4"]]
 ];
 
-LottoLocations = [fuel2,fuel4,fuel5];
+LottoLocations = [gasstation1,gasstation2,gasstation3,gasstation4,gasstation5,gasstation6,gasstation7,northsupermarket,gasstation8,gasstation9];
 
 /*WorkPlaceSettings*/
 workplacejob_taxi_zielarray	 = 
 [
-[4563.42,2440.36,0],
-[4556.67,2444.96,0],
-[8051.28,1839.11,0],
-[3711.54,2949.25,0],
-[7703.09,2010.78,0],
-[5372.17,1819.56,0],
-[5797.48,3171.29,0],
-[5367.33,1822.21,0],
-[5369.69,1823.64,0],
-[5280.19,1764.8,0],
-[6506.02,3056.54,0],
-[5371.55,1822.2,0],
-[4765.55,5522.06,0],
-[6615.34,5709.6,0],
-[7782.44,4317.35,0],
-[3684.25,3144.21,0],
-[6933.7,3637.72,0],
-[4607.19,3795.98,0],
-[3767.33,3015.55,0],
-[2690.58,2759.59,0]
+	[4563.42,2440.36,0],
+	[4556.67,2444.96,0],
+	[8051.28,1839.11,0],
+	[3711.54,2949.25,0],
+	[7703.09,2010.78,0],
+	[5372.17,1819.56,0],
+	[5797.48,3171.29,0],
+	[5367.33,1822.21,0],
+	[5369.69,1823.64,0],
+	[5280.19,1764.8,0],
+	[6506.02,3056.54,0],
+	[5371.55,1822.2,0],
+	[4765.55,5522.06,0],
+	[6615.34,5709.6,0],
+	[7782.44,4317.35,0],
+	[3684.25,3144.21,0],
+	[6933.7,3637.72,0],
+	[4607.19,3795.98,0],
+	[3767.33,3015.55,0],
+	[2690.58,2759.59,0]
 ];
 
 workplacejob_taxi_sperrzeit	 = 0.01;																						
@@ -95,7 +106,6 @@ workplacejob_hostage_failed = false;
 /*Other*/
 lockpicking = false;
 isstunned                = false;
-Antwort                  = 0;
 CivTimeInPrison          = 0;
 isCrackingSafe			 = 0;
 safeCrackFailed			 = 0;

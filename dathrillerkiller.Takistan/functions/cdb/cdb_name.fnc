@@ -1,4 +1,4 @@
-private ["_return"];
+﻿private ["_return"];
 if (isPlayer _this && (vehicle _this != _this))then
 {
 	_return = name _this;

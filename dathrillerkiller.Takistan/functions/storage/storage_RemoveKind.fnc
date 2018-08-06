@@ -1,4 +1,4 @@
-private ["_object","_kind","_array","_arrayitems","_arrayamount","_return"];
+﻿private ["_object","_kind","_array","_arrayitems","_arrayamount","_return"];
 
 _object = _this select 0;
 _kind = _this select 1;

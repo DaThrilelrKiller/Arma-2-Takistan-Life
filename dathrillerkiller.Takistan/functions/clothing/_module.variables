@@ -1,4 +1,4 @@
-module_clothing = true;
+﻿module_clothing = true;
 v_clothing_actions = [
 
 ];

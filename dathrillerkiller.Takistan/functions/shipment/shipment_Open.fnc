@@ -1,4 +1,4 @@
-createdialog 'shipment_open';
+﻿createdialog 'shipment_open';
 
 {
 	_name = markerText _x;

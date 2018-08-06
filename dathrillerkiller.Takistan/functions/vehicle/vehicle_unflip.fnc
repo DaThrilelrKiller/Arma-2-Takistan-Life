@@ -1,4 +1,4 @@
-_vehicle = call keys_grabVehicle;
+﻿_vehicle = call keys_grabVehicle;
 _name = _vehicle call vehicle_name;
 
 if !(isNil "_vehicle")then {

@@ -1,1 +1,1 @@
-[player]call action_addAll;
+﻿[player]call action_addAll;

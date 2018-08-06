@@ -1,6 +1,7 @@
-[
-"delete",
-"exsist",
+﻿[
 "switch",
-"init"
+"init",
+"create",
+"texture",
+"respawn"
 ];

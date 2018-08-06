@@ -1,4 +1,4 @@
-private ["_data","_i","_unit","_votes","_message","_winner"];
+﻿private ["_data","_i","_unit","_votes","_message","_winner"];
 
 _data = call goverment_votes;
 _i = 0;
@@ -16,7 +16,7 @@ _i = 0;
 
 if (isNil "_winner")then 
 {
-	["ALL",["dtk_client","Elections","The elections for governor has ended %1 is sill governor, no one ran for governor",name call goverment_govonor],"Main_Notification",true,false]call network_MPExec;
+	["ALL",["dtk_client","Elections",format["The elections for governor has ended %1 is sill governor, no one ran for governor",name call goverment_govonor]],"Main_Notification",true,false]call network_MPExec;
 
 }else
 {

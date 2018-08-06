@@ -1,4 +1,4 @@
-if(!alive player)exitwith{};
+﻿if(!alive player)exitwith{};
 
 private ["_vehicle","_selection","_damage","_shooter","_ammo"];
 _vehicle	= _this select 0;

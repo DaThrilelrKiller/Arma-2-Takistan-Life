@@ -1,4 +1,4 @@
-
+﻿
 while {alive player} do
 {
 	call shipment_time;

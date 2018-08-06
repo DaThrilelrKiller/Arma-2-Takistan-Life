@@ -1,4 +1,4 @@
-private ["_marker"];
+﻿private ["_marker"];
 
 {
 	_marker = createMarkerLocal [("speedcam_" + str _ForEachIndex), getPos _x];

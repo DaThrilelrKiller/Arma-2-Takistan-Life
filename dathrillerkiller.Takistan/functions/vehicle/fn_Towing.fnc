@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_Towing.sqf
 Desc: Simple tow script that works with alot of vehicles and does NOT requir arrays of vehicles
 Author: DaThrillerKiller -PureGaming Founder

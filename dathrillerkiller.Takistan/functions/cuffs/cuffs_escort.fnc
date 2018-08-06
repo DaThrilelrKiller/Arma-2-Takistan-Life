@@ -1,4 +1,4 @@
-private ["_unit","_escorting","_escort"];
+﻿private ["_unit","_escorting","_escort"];
 
 _escorting = player getVariable "escorting";
 

@@ -1,4 +1,4 @@
-private ["_type","_name","_index","_ui","_Main","_picture"];
+﻿private ["_type","_name","_index","_ui","_Main","_picture"];
 
 {
 _type = (_x call config_type);

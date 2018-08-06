@@ -1,4 +1,4 @@
-private ["_gangs","_return","_Members","_name","_playname"];
+﻿private ["_gangs","_return","_Members","_name","_playname"];
 _gangs = gangs getVariable ["Names",[]];
 _return = "";
 

@@ -1,4 +1,4 @@
-if ([player,2] call statsave_nearSave)exitWith
+﻿if ([player,2] call statsave_nearSave)exitWith
 {
 	if (driver (vehicle player) == player)then {
 		if (vehicle player != player)then {

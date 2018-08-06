@@ -1,4 +1,4 @@
-
+﻿
 class atm_menu
 {
 	idd = 111;

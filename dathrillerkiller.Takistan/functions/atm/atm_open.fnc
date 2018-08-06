@@ -1,4 +1,4 @@
-private ["_geld","_bank"];
+﻿private ["_geld","_bank"];
 
 if (dialog)exitWIth {closedialog 0};
 
@@ -6,7 +6,7 @@ if !(local_useBankPossible)  exitWith {systemChat  format [localize "STRS_bank_d
 
 _geld = [player,"geld"] call storage_amount;
 _geld = [_geld]call Main_FormatMoney;
-_bank  = [konToStand] call Main_FormatMoney;
+_bank  = [dtk_bank] call Main_FormatMoney;
 
 createDialog "atm_menu";
 

@@ -1,4 +1,4 @@
-private ["_MainArray","_uid","_varName","_varValue"];
+﻿private ["_MainArray","_uid","_varName","_varValue"];
 
 _MainArray = _this select 0;
 _uid = _this select 1;

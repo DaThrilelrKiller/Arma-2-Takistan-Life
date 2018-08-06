@@ -1,4 +1,4 @@
-private ["_road","_array","_return"];
+﻿private ["_road","_array","_return"];
 
 _road = _this;
 _array = toArray _road;

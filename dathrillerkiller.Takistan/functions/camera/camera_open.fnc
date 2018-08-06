@@ -1,4 +1,4 @@
-private ["_laptop","_laptopside","_cameras","_data","_advanced","_side","_text","_index"];
+﻿private ["_laptop","_laptopside","_cameras","_data","_advanced","_side","_text","_index"];
 
 v_cam_array = [];
 

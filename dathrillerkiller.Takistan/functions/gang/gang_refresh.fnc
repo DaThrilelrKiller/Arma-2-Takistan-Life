@@ -1,4 +1,4 @@
-/* refresh member list when new gang is select in the list box */
+﻿/* refresh member list when new gang is select in the list box */
 
 if !(v_gang_refresh)exitWith {};
 

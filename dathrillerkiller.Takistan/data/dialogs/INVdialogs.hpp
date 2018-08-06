@@ -1,4 +1,4 @@
-class itemkaufdialog 
+﻿class itemkaufdialog 
 
 {
 

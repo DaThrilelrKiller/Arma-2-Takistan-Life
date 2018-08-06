@@ -1,3 +1,3 @@
-systemChat  localize "STRS_inv_items_ressources";
+﻿systemChat  localize "STRS_inv_items_ressources";
 
 

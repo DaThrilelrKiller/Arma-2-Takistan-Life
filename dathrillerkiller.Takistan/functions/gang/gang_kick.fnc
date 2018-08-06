@@ -1,4 +1,4 @@
-private ["_kick","_gang","_text"];
+﻿private ["_kick","_gang","_text"];
 
 /* 
 this function is not complete 

@@ -1,4 +1,4 @@
-dtk_hunger = dtk_hunger + 1;
+﻿dtk_hunger = dtk_hunger + 1;
 
 {
 	if (dtk_hunger == (_x select 0))then {

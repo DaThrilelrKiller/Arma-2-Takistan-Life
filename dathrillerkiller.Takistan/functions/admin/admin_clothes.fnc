@@ -1,4 +1,4 @@
-createDialog "admin_clothes";
+﻿createDialog "admin_clothes";
 admin_selected = 4;
 [2100, true] call dtk_PlayerListToControl;
 call admin_load;

@@ -7,5 +7,6 @@
 "handler",
 "tweet",
 "send",
-"emojis"
+"emojis",
+"show"
 ];

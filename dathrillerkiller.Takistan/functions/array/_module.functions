@@ -1,5 +1,6 @@
-[
+﻿[
 "reverse",
 "compare",
-"trim"
+"trim",
+"SelectNext"
 ];

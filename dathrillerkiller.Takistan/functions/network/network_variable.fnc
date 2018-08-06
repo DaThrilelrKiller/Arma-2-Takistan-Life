@@ -1,4 +1,4 @@
-private ["_variable","_function","_client","_value"];
+﻿private ["_variable","_function","_client","_value"];
 
 _variable = _this select 0;
 _function = _this select 1;

@@ -1,4 +1,4 @@
-private ["_vehicle","_fuel"];
+﻿private ["_vehicle","_fuel"];
 
 _vehicle = (nearestobjects [getpos player, ["Motorcycle","car","Truck", "Ship", "LandVehicle"], 10]);
 _vehicle = _vehicle select 0;

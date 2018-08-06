@@ -1,4 +1,4 @@
-private ["_holster","_holstered"];
+﻿private ["_holster","_holstered"];
 
 _holster = _this select 0;
 _holstered = player getVariable [_holster,""];

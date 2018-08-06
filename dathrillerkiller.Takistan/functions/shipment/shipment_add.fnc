@@ -1,4 +1,4 @@
-
+﻿
 _location = (lbData [1500, (lbCurSel 1500)]);
 _item = (lbData [1501, (lbCurSel 1501)]);
 _vehicle = call compile (lbData [2100, (lbCurSel 2100)]);

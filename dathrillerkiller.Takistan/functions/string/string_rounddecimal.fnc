@@ -1,4 +1,4 @@
-private ["_array","_return"];
+﻿private ["_array","_return"];
 
 if (_this == 1)exitWith {"100"};
 

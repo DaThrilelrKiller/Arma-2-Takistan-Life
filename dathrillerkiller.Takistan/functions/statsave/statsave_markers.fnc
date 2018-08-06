@@ -1,4 +1,4 @@
-private ["_marker"];
+﻿private ["_marker"];
 
 if (dtk_client)then {
 	{

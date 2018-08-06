@@ -1,4 +1,4 @@
-private ["_type","_grp","_name"];
+﻿private ["_type","_grp","_name"];
 
 if !([player,"geld",-dog_cost] call storage_add)exitWith {
 systemChat  "You dont have enough money";

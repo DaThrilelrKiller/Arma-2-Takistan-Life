@@ -1,4 +1,4 @@
-if (!alive player)exitwith{}; 
+﻿if (!alive player)exitwith{}; 
 
 isstunned=true;
 

@@ -1,4 +1,4 @@
-_secondcounter = 0;
+﻿_secondcounter = 0;
 _minutecounter = 0;
 _art = (_this select 3) select 0;
 
@@ -40,7 +40,7 @@ _markername SetMarkerPos _start;
 																
 systemChat  "The Hostage Is Marked On The Map, Don't Let The Police Get You!";
 
-"if (iscop) then {player sideChat ""Someone Is Trying To Take A Hostage. The Hostage Has Been Marked On The Map. Arrest The Hostage Taker Before Its Too Late!""};" call network_broadcast;
+"if (dtk_cop) then {player sideChat ""Someone Is Trying To Take A Hostage. The Hostage Has Been Marked On The Map. Arrest The Hostage Taker Before Its Too Late!""};" call network_broadcast;
 
 systemChat  "The Police Are On To You, Hurry Up!";
 [player,"Hostage Taker",150000]call cdb_addWarrant;
@@ -56,7 +56,7 @@ while {true} do
 	if (_minutecounter >= 1800 and alive player) exitWith
 	
 		{
-		kontostand = kontostand + 500000;
+		dtk_bank = dtk_bank + 500000;
 		systemChat  "Well done, you kept the hostage for 30 minutes, $500000 has been transfered to your account.";
 		sleep 10;
 		"systemChat ""Hostage Taker WINS, he kept the hostage for 30 minutes."";" call network_broadcast;
@@ -86,7 +86,7 @@ while {true} do
 		systemChat ""The Hostage has escaped! Cops get $100000"";
 		_copplayernumber = playersNumber west;
 		_copbonus = 100000;
-		if (iscop) then {Kontostand = (Kontostand + _copbonus); player sidechat format[""you received $%1 for hostage taker fleeing the area"", _copbonus];};
+		if (dtk_cop) then {dtk_bank = (dtk_bank + _copbonus); player sidechat format[""you received $%1 for hostage taker fleeing the area"", _copbonus];};
 		" call network_broadcast;
 		sleep 2;
 		systemChat  "The hostage has escaped the containment area, keep him inside next time!";
@@ -106,7 +106,7 @@ while {true} do
 		systemChat ""The Hostage Taker Has Lost!"";
 		_copplayernumber = playersNumber west;
 		_copbonus = 60000;
-		if (iscop) then {Kontostand = (Kontostand + _copbonus); player sidechat format[""you received $%1 for the successful rescue of the hostage"", _copbonus];};
+		if (dtk_cop) then {dtk_bank = (dtk_bank + _copbonus); player sidechat format[""you received $%1 for the successful rescue of the hostage"", _copbonus];};
 		" call network_broadcast;
 		sleep 2;
 		systemChat  "The Hostage was rescued, mission failed!";

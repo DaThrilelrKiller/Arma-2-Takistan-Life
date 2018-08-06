@@ -1,4 +1,4 @@
-
+﻿
 {
 	if (!isNil format["%1_jip",_x] && {_x != "Setup"})then {
 		_this call call compile format["%1_jip",_x];

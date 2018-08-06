@@ -1,4 +1,4 @@
-_lotto     = (_this  select 0) call Other_GetLottoArray;
+﻿_lotto     = (_this  select 0) call Other_GetLottoArray;
 _lottocost = (_lotto select 2);
 _lottowin  = (_lotto select 3);
 _winner    = random 5;

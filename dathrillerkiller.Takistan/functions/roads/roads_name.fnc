@@ -1,4 +1,4 @@
-private ["_id","_name"];
+﻿private ["_id","_name"];
 _id = _this;
 _name = 
 {

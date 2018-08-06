@@ -1,4 +1,4 @@
-class cdb_warrant{
+﻿class cdb_warrant{
 	idd=-1;
 	controlsBackground[] = {};
 	objects[] = {};
@@ -169,6 +169,7 @@ class cdb_search
 			w = safeZoneW * 0.4075;
 			h = safeZoneH * 0.52333334;
 			colorDisabled[] = {0.2,0.2,0.2,1};	
+			onLBDblClick = "_this call cdb_DblClick";
 		};
 		
 	};

@@ -1,4 +1,4 @@
-class BankCodeEnterDLG
+﻿class BankCodeEnterDLG
 {
 	idd=-1;
 	movingEnable=1;

@@ -1,13 +1,16 @@
-diag_log text "[LOG]Pre Initialization started!";
+﻿diag_log text "[LOG]Pre Initialization started!";
 dtk_client = hasInterface;
 dtk_server = !dtk_client;
 
+if (dtk_server)then {
+	call compile preprocessFile "\MPMissions\functions\pre_init.sqf";
+};
 
+call compile preprocessFile "functions\spawn_points.sqf";
 call compile preprocessFile "configuration\CfgFunctions.fnc";
-call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
+call compile preprocessFile  "scripts\miscfunctions.sqf";
 call compile preprocessFile "configuration\CfgMaster.sqf";
 call compile preprocessFile "configuration\CfgShops.sqf";
-call compile preprocessFile "ServerLoad\Optimize.sqf";
 
 private ["_modules","_functions"];
 dtk_fnc_total = 0;
@@ -24,8 +27,11 @@ dtk_active_modules =
 "Storage",
 "Shops",
 "Goverment",
+"Border",
 "Licenses",
+"Roads",
 "ID",
+"Bike",
 "Chat",
 "Impound",
 "Markers",
@@ -34,6 +40,7 @@ dtk_active_modules =
 "Admin",
 "Police",
 "Cdb",
+"War",
 "Plates",
 "Cuffs",
 "Dog",
@@ -43,7 +50,6 @@ dtk_active_modules =
 "Quest",
 "Locations",
 "Setup",
-"Drug",
 "ATM",
 "Medical",
 "Gear",
@@ -55,29 +61,30 @@ dtk_active_modules =
 "Keys",
 "Garage",
 "Clothing",
+"Slots",
 "GPS",
 "Dance",
 "Statsave",
 "Gang",
 "Vehicle",
 "Hunger",
-"Hud",
 "Tag",
 "Flashbang",
 "Fingerprints",
+"Hud",
 "killfeed",
 "Spawn"
 ];
 
 /*loads variables first for all active modules*/
 {
-	call compile format['call compile preprocessFile "functions\%1\_module.variables";', _x ];
+	call compile preprocessFile format["functions\%1\_module.variables",_x];
 }count dtk_active_modules;
 
 
 /*loads module functions*/
 {
-	_functions = call compile format['call compile preprocessFile "functions\%1\_module.functions";', _x];
+	_functions = call compile preprocessFile format ["functions\%1\_module.functions",_x];
 	_module = _x;
 	{
 		call compile format['
@@ -91,12 +98,4 @@ dtk_active_modules =
 
 
 diag_log formatText ["Total Modules: %2 Total Functions: %1",dtk_fnc_total,count dtk_active_modules];
-
-if (dtk_server)then {
-	call compile preprocessFile "\MPMissions\functions\pre_init.sqf";
-}
-else{
-	call compile preprocessFile "functions\spawn_points.sqf";
-};
-
 diag_log text "[LOG]Pre Initialization finished!";

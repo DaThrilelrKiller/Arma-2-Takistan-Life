@@ -1,4 +1,4 @@
-private ["_prams","_function","_sceduled","_name"];
+﻿private ["_prams","_function","_sceduled","_name"];
 
 _prams = (_this select 0);
 _function = (_this select 1);

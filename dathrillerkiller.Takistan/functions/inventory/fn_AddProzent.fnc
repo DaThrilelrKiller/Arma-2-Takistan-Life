@@ -1,4 +1,4 @@
-private ["_wert", "_prozent", "_result"];
+﻿private ["_wert", "_prozent", "_result"];
 	_wert    = _this select 0;
 	_prozent = _this select 1;
 	_runden  = true;

@@ -7,7 +7,7 @@ private ["_random","_object","_amount"];
 
 	if (_amount < maxstationmoney) then
 	{
-	_amount = _amount + _random;
+		_amount = _amount + _random;
 	};
 	_object setVariable ["robbery_money",_amount,true];
 }forEach robbery_actions;

@@ -1,4 +1,4 @@
-_item   = _this select 0; 
+﻿_item   = _this select 0; 
 _amount = _this select 1;
 _image = format ["data\images\items\%1",[_item]call config_image];
 

@@ -1,4 +1,4 @@
-private ["_vehicle","_siren","_ar_siren"];
+﻿private ["_vehicle","_siren","_ar_siren"];
 
 _vehicle = (vehicle player);
 _siren = (_vehicle getVariable "dtk_siren");

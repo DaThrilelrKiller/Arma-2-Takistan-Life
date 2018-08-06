@@ -1,4 +1,4 @@
-_obj 	= _this;
+﻿_obj 	= _this;
 _list	= _obj getvariable "druglist";
 
 if(isnil "_list")exitwith{systemChat  "No Drugs Found!"};

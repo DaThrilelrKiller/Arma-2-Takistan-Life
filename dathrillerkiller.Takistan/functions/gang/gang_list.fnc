@@ -1,4 +1,4 @@
-private ["_gangs","_index"];
+﻿private ["_gangs","_index"];
 
 /* grabs list of all gangs */
 _gangs = gangs getVariable ["Names",[]];

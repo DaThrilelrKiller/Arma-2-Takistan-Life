@@ -10,7 +10,8 @@ _variables = [ "RE","abc", "abc2", "abc3", "abc4", "abcd", "abcdefGEH", "airborn
 {
 	if !(isNil _x)then
 	{
-		["ALL",[getPlayerUID player,name player,format ["Blacklisted Variable: %1",_x]],"OwlEye_ban",false,true]call network_MPExec;
+		["ALL",[getPlayerUID player,name player,format ["Blacklisted Variable: %1",_x]],"OwlEye_kick",true,true]call network_MPExec;
+		missionNamespace setVariable [_x,nil]
 	};
 }forEAch _variables;
 

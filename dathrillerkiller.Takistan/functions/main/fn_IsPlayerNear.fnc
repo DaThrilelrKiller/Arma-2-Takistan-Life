@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: fn_IsPlayerNear.sqf
 Desc: Checks if there are any players within a given radius of a object
 Author: DaThrillerKiller -PureGaming Founder

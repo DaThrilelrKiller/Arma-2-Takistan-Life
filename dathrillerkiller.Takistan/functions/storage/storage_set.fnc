@@ -1,4 +1,4 @@
-/*set variable of inventoy*/
+﻿/*set variable of inventoy*/
 private ["_object","_array"];
 
 _object = _this select 0;

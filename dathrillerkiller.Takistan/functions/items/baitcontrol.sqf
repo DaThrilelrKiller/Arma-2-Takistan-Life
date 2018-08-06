@@ -1,4 +1,4 @@
-private["_i","_car","_carsKilled","_xCar"];
+﻿private["_i","_car","_carsKilled","_xCar"];
 
 for "_i" from 0 to (count bc_baitcars) do
 {

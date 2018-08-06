@@ -1,4 +1,4 @@
-private ["_art","_item","_closeVcl"];
+﻿private ["_art","_item","_closeVcl"];
  _art = _this select 0;
 
 if (_art == "use") then 

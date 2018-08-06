@@ -32,8 +32,6 @@ private ["_i"];
 for "_i" from 0 to 1 step 0 do 
 {
 	call s_OwlEye_vehicle;
-	call s_OwlEye_magizine;
-	call s_OwlEye_weapon;
 	sleep 1;
 };
 };

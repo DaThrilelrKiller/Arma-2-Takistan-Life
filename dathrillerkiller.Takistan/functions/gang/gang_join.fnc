@@ -1,4 +1,4 @@
-private ["_gang","_locked","_members"];
+﻿private ["_gang","_locked","_members"];
 
 /* grab data */
 _gang = lbData [2, lbCurSel 2];

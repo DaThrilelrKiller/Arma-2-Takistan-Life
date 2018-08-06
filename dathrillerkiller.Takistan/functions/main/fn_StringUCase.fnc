@@ -1,4 +1,4 @@
-	private["_text", "_chararr", "_i", "_curchar", "_result"];
+﻿	private["_text", "_chararr", "_i", "_curchar", "_result"];
 	_text = _this select 0;
 	_result = "";
 	

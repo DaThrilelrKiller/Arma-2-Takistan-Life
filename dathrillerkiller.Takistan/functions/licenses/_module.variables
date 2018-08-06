@@ -1,22 +1,21 @@
-module_licenses = true;
+﻿module_licenses = true;
 
-dtk_licenses = 
-[
-	["car",[atm4,atm1,adminbank], "Drivers License",100],
-	["truck",[atm4,atm1,adminbank], "CDL",1400],
-	["air",[atm4,atm1,adminbank], "Plane License",15000],
-	["Pistollicense",[gunlicsouth,licenseflag2,adminbank],"Pistol License",10000],
-	["Riflelicense",[gunlicsouth,licenseflag2,adminbank],"Rifle License",20000],
-	["automatic",[gunlicsouth,adminbank,licenseflag2,adminbank],"Automatic Rifle License",50000],
-	["engineer",[atm4,atm1,memshop,memshop],"Engineer Training",750],
-	["bomb",[adminbank,atm12],"Terrorist License",100000],
-	["probator",[adminbank,copbank,copbank], "STRS_license_probator",100],
-	["patrol_training",[adminbank,copbank,copbank], "Patrol License",2000],
-	["response_training",[adminbank,copbank,copbank],"Advanced Officer Training",10000],
-	["SCO_training",[adminbank,copswat,copswat],"SCO19 Training",12500],
-	["copAir",[adminbank,copbank,copbank],"Air Support Training",13000],
-	["passport_civilian",[passseller,passseller3],"Passport",100],
-	["southgov",[], "South Government License",60000],
-	["PMClicense",[adminbank,pmcshop,pmcshop], "PMC License",5000],
+dtk_licenses = [
+	["car",[atm4,atm1],"Drivers License",100,"true"],
+	["truck",[atm4,atm1],"Commercial Driver's License (CDL)",1400,"true"],
+	["air",[atm4,atm1],"Air License",15000,"true"],
+	["Pistollicense",[gunlicsouth,licenseflag2],"Pistol License",10000,"true"],
+	["Riflelicense",[gunlicsouth,licenseflag2],"Rifle License",20000,"true"],
+	["automatic",[gunlicsouth,licenseflag2],"Automatic Rifle License",50000,"true"],
+	["engineer",[atm4,atm1,memshop,memshop],"Engineer Training",750,"true"],
+	["bomb",[atm12,objnull],"Terrorist License",100000,"true"],
+	["probator",[copbank,copbank],"STRS_license_probator",100,"true"],
+	["patrol_training",[copbank,copbank],"STRS_license_coppatrol",2000,"dtk_cop"],
+	["response_training",[copbank,copbank],"Advanced Officer Training",10000,"dtk_cop"],
+	["SCO_training",[copswat,copswat],"SCO19 Training",12500,"dtk_cop"],
+	["copAir",[copbank,copbank],"Air Support Training",13000,"dtk_cop"],
+	["passport_civilian",[passseller,passseller3,objNull],"Passport",100,"true"],
+	["southgov",[southAir,objNull,objNull], "South Government License",60000,"true"],
+	["PMClicense",[pmcshop,pmcshop], "PMC License",5000,"true"],
 	["",[],"n/a",0,"false"]
 ];

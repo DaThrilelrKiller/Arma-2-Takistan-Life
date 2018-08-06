@@ -1,4 +1,4 @@
-_bullet = _this select 0;
+﻿_bullet = _this select 0;
 _timenow = time;
 
 waitUntil {(velocity _bullet)select 0 == 0};

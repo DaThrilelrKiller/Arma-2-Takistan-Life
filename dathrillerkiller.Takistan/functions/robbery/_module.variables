@@ -1,12 +1,15 @@
-robbery_actions = [
-[fuel2,"Gas n Porn"],
-[fuel4,"Gas N Pit"],
-[fuel5,"Gas N Chips"],
-[pharmacy,"Pharmacy"],
-[pub1,"Fionas Pub"],
-[pub2,"SouthSide Pub"],
-[pub3,"Macks Bar"],
-[pub4,"Hermanns Haxe Cellar"]
+﻿robbery_actions = [
+[gasstation1,"Gas n Porn"],
+[gasstation2,"Gas N Pit"],
+[gasstation3,"Gas N Chips"],
+[gasstation4,"Gas N Go"],
+[gasstation5,"Mikes Gas"],
+[gasstation6,"JimBobs Fuel Station"],
+[gasstation7,"Fast Fuel"],
+[gasstation8,"Cum & Go"],
+[gasstation9,"Get Gas Fast"],
+[northsupermarket,"Tuckers Fuel"],
+[pub1,"Taksitan Pub"]
 ];
 
 robbery_dialog_array = 

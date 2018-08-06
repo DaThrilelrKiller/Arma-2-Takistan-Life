@@ -1,4 +1,4 @@
-private ["_action","_item","_textamount","_player","_filename","_itemamount"];
+﻿private ["_action","_item","_textamount","_player","_filename","_itemamount"];
 _action = _this select 0;
 _item   =  call compile (_this select 1);
 _item = _item select 0;

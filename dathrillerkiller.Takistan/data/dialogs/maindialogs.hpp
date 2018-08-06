@@ -1,4 +1,4 @@
-class baildialog
+﻿class baildialog
 {
 	idd = -1;
 	movingEnable = true;
@@ -371,6 +371,8 @@ class ja_nein
 	idd = -1;		
 	movingEnable = true;
 	controlsBackground[] = {DLG_BACK1, background};
+	onLoad = "dtk_answer = nil";
+	onUnload = "if (isNil 'dtk_answer')then {dtk_answer = false};";
 	objects[] = { };	
 	controls[] = {infotext, button1, button2, dummybutton};	
 	class DLG_BACK1: Rscbackground			
@@ -408,7 +410,7 @@ class ja_nein
 		h = 0.04;	
 
 		text = "Pay";	
-		action = "Antwort = 1; closeDialog 0;";	
+		action = "dtk_answer = true; closeDialog 0;";	
 	};
 	
 	class button2 : RscButton	
@@ -419,7 +421,7 @@ class ja_nein
 		h = 0.04;
 
 		text = "No";	
-		action = "Antwort = 2; closeDialog 0;";	
+		action = "dtk_answer = false; closeDialog 0;";	
 	};
 	
 	class dummybutton : RscDummy {idc = 1023;
@@ -459,10 +461,12 @@ class wahldialog
 		w = 0.27; 
 		h = 0.61;
 		idc = 1;
+		onLBSelChanged = "_this call goverment_lbChanged";
 	};			
 	
 	class submit : RscButton	
 	{
+		idc = 67;
 		x = 0.42; 
 		y = 0.72;
 		w = 0.20;

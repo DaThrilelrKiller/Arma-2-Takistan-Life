@@ -1,4 +1,4 @@
-_type    = ((_this select 3)select 0);
+﻿_type    = ((_this select 3)select 0);
 _item    = _this select 0;
 _chance  = _this select 1;
 _maxzahl = _this select 2;

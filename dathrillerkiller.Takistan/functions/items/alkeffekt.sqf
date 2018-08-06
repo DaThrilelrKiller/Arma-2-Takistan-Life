@@ -1,4 +1,4 @@
-private ["_art","_item","_anzahl","_endeZeit","_fadeInTime","_fadeOutTime","_faded","_v1","_v2","_v3","_v1add"];
+﻿private ["_art","_item","_anzahl","_endeZeit","_fadeInTime","_fadeOutTime","_faded","_v1","_v2","_v3","_v1add"];
 
 _art = _this select 0;
 if (_art == "init") then 

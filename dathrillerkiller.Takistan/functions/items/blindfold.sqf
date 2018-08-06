@@ -1,4 +1,4 @@
-private ["_art","_player"];
+﻿private ["_art","_player"];
 
 _art = _this select 0;
 _player = cursorTarget;

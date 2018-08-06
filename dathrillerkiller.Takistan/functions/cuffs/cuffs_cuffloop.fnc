@@ -1,4 +1,4 @@
-while {player getVariable "ar_cuffed" and alive player} do
+﻿while {player getVariable "ar_cuffed" and alive player} do
 {
 	if (vehicle player == player)then
 	{

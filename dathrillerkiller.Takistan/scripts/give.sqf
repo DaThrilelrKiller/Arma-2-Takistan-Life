@@ -1,4 +1,4 @@
-_action         = _this select 0;
+﻿_action         = _this select 0;
 _item        = _this select 1;
 _amount       = _this select 2;
 _name = (_item call config_displayname);

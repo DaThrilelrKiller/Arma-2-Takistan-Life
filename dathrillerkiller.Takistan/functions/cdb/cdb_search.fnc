@@ -1,4 +1,4 @@
-private ["_warrants","_license","_notes"];
+﻿private ["_warrants","_license","_notes"];
 
 lbClear 2;
 lbClear 3;
@@ -15,7 +15,8 @@ if (isNil "cdb_object" or {isNull cdb_object})exitWith {
 
 if !(cdb_object isKindOf "Man")then{
 	_data = (cdb_object getVariable "DTK_OwnerUID");
-	_index = lbadd [2, format ["Vehicle Is Registered To: %1",(_data select 3)]];
+	_index = lbadd [2, format ["Vehicle Is Registered To: %1 <-- double click to search database",(_data select 3)]];
+	lbSetData [2, _index, format["%1", (_data select 3)]];
 	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
 	_index = lbadd [2, format ["Type: %1",(_data select 1)call config_displayname]];
 	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];

@@ -1,4 +1,4 @@
-private ["_vehicle","_dog"];
+﻿private ["_vehicle","_dog"];
 
 _dog = player getVariable "CLAY_DogUnit";
 _vehicle = _dog getVariable "CLAY_DogVehicle";

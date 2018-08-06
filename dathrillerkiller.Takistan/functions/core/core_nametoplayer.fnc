@@ -1,4 +1,4 @@
-private ["_return"];
+﻿private ["_return"];
 
 _return = {
 if (name _x == _this)exitWith {_x};

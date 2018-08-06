@@ -1,5 +1,5 @@
-_civmenuciv  = civmenuciv;
-_civmenu_civ = civmenu_civ;
+﻿_civmenuciv  = civmenuciv;
+_civmenu_civ = civmenu_civ; 
 _art         = _this select 0;
 
 if ((player distance _civmenuciv >= 25) or (!(alive _civmenuciv))) exitWith 
@@ -10,7 +10,7 @@ if ((player distance _civmenuciv >= 25) or (!(alive _civmenuciv))) exitWith
 /*check player licenses */
 if (_art == 5) exitWith 
 {
-	[_civmenu_civ]call licenses_check
+	[_civmenuciv]call licenses_check
 };
 
 /* seach players storage,licenses,weapons... */
@@ -18,14 +18,14 @@ if (_art == 6) exitWith
 
 {
 	if(!(_civmenuciv call ISSE_IsVictim))exitwith{hint localize "STRS_inventory_checknohands"};		
-	[_civmenu_civ] call storage_seach;
+	[_civmenuciv] call storage_seach;
 };
 
 /* civilain menu basicly used to rob people and drop all their items */
 if (_art == 20) exitWith 
 {
 	if(!(_civmenuciv call ISSE_IsVictim))exitwith{hint localize "STRS_inventory_checknohands"};
-	(format ["if (AR_playerString == ""%1"") then {[]call storage_dropall;};", _civmenu_civ, AR_playerString]) call network_broadcast;
+	[_civmenuciv]call storage_trunk;
 };
 
 /* Seach for controban and remove it */
@@ -59,7 +59,7 @@ systemChat  format [localize "STRS_civmenu_disarm", _civmenu_civ];
 
 };
 
-if ((_art == 3) and (player distance prisonflag <= 70)) exitWith 
+if (_art == 3) exitWith 
 
 {
 

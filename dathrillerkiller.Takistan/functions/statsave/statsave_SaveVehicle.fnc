@@ -1,4 +1,4 @@
-private ["_vcl","_vclClass","_trunk","_speedupgrade","_save","_plate","_warrants","_license","_notes","_sirens","_name"];
+﻿private ["_vcl","_vclClass","_trunk","_speedupgrade","_save","_plate","_warrants","_license","_notes","_sirens","_name"];
 _vcl = (vehicle player);
 if !([player,_vcl]call keys_has)exitWith {systemChat "you dont have the keys to this vehicle"};
 _name = _vcl call vehicle_name;

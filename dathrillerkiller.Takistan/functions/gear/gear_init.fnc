@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: gear_init.fnc
 Desc: init for the gear module, automaticly inilized by the DTK (DaThrillerKiller) Framework
 Author: DaThrillerKiller -PureGaming Founder

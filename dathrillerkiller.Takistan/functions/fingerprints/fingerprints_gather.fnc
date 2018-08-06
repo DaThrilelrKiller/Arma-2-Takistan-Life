@@ -1,4 +1,4 @@
-_object = cursorTarget;
+﻿_object = cursorTarget;
 if (isNull _object)exitWith {
 systemchat "You must be staring at the object you are trying to get finger prints from";
 };

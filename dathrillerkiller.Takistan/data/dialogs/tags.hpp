@@ -1,4 +1,4 @@
-class tag {
+﻿class tag {
 
 	idd = 1000600;
 	movingEnable=0;

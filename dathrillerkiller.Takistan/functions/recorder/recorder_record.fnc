@@ -1,4 +1,4 @@
-
+﻿
 _data = _this select 0;
 _amount = _this select 1;
 _variable = _this select 2;

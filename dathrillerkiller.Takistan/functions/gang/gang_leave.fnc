@@ -1,4 +1,4 @@
-private ["_gang","_members","_index","_name"];
+﻿private ["_gang","_members","_index","_name"];
 
 /* grab current player gang */
 _gang =  player call gang_name;

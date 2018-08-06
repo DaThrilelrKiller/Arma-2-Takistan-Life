@@ -1,8 +1,5 @@
 call compile preprocessFile "\MPMissions\configuration\CfgVariables.sqf";
 
-[] execVM "\MPMissions\server\fn_loop.sqf";
-[]call Main_ResetSafeCode;
-
 onPlayerDisconnected '
 deleteMarker ("medical_" + _name);
 _name call s_disconnect_disconnedted;

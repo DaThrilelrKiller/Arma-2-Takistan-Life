@@ -1,3 +1,7 @@
+﻿if (dtk_server)exitWith {
+		[300,tag_motd]call core_AddLoop;
+};
+
 10 cutRsc ["tag", "PLAIN"];
 
 {

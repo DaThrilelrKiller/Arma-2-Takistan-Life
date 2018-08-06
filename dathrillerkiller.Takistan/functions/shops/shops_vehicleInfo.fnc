@@ -1,4 +1,4 @@
-_class = configFile >> "CfgVehicles" >> _this;
+﻿_class = configFile >> "CfgVehicles" >> _this;
 if (isClass _class)then {
 	_fuel = getNumber (_class >> "fuelCapacity");
 	_fuelRate = getNumber (_class >> "fuelConsumptionRate");

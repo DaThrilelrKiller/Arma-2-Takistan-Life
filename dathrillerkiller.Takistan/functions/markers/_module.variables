@@ -1,2 +1,2 @@
-module_markers = true;
+﻿module_markers = true;
 role = player;

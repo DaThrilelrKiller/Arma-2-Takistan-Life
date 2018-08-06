@@ -1,4 +1,4 @@
-_object = _this select 0;
+﻿_object = _this select 0;
 _prams = _this select 1;
 _array = _object getVariable ["dtk_actions",[]];
 

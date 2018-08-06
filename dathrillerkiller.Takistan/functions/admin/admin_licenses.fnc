@@ -1,4 +1,4 @@
-createDialog "admin_licenses";
+﻿createDialog "admin_licenses";
 admin_selected = 5;
 [2100, true] call dtk_PlayerListToControl;
 call admin_load;

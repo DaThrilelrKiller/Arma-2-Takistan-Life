@@ -1,4 +1,4 @@
-private ["_array"];
+﻿private ["_array"];
 
 _array = robbery_dialog_array call BIS_selectRandom;
 {

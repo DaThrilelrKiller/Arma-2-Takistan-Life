@@ -1,4 +1,4 @@
-private ["_objects","_object","_text"];
+﻿private ["_objects","_object","_text"];
 
 if ([player,2] call statsave_nearSave)then {
 		_text = ["Retrive Vehicle (E)","Save Vehicle (E)"]select (vehicle player != player);

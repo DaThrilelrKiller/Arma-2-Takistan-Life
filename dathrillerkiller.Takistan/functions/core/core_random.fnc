@@ -1,4 +1,4 @@
-private ["_min","_max","_return"];
+﻿private ["_min","_max","_return"];
 _min = _this select 0;
 _max = _this select 1;
 

@@ -1,4 +1,4 @@
-_target = _this select 0;
+﻿_target = _this select 0;
 _dog = player getVariable "CLAY_DogUnit";
 
 If (_dog distance _target <= 4) then

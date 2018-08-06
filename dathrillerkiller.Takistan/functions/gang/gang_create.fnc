@@ -1,4 +1,4 @@
-private ["_name","_gangs","_locktext"];
+﻿private ["_name","_gangs","_locktext"];
 
 /* grab needed prams */
 _name = (ctrlText 5);
@@ -6,7 +6,7 @@ _gangs = gangs getVariable ["Names",[]];
 _locktext = format["%1_locked",_name];
 
 /* check if name is valid for use */
-if (_name == "Names")exitWith {systemchat "That name cannot be used"};
+if (_name == "Names" && !(_name in dtk_notAllowed))exitWith {systemchat "That name cannot be used"};
 if (_name in _gangs)exitWith {systemchat "Gang already exsist"};
 if (_name == _locktext)exitWith {systemchat "That name cannot be used"};
 

@@ -1,4 +1,4 @@
-if ((TypeName _this) == "STRING") then 
+﻿if ((TypeName _this) == "STRING") then 
 {													
 	PGRE = _this;									
 	publicVariable "PGRE";																														

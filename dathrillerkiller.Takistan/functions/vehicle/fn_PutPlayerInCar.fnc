@@ -1,4 +1,4 @@
-targetvar = objNull;
+﻿targetvar = objNull;
 private ["_cop""_vcl"];
 _cop = player;
 _vcl = (nearestobjects [getpos _cop, ["Air", "Ship", "LandVehicle"], 3] select 0);

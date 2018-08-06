@@ -1,4 +1,4 @@
-disableSerialization;
+﻿disableSerialization;
 sleep 1;
 
 private ["_a"];
@@ -39,34 +39,7 @@ for "_a" from 0 to 1 step 0 do
 					_text1 = format ["Please Wait: (%1)",_e]; 
 					if (_e == 5) then 
 					{
-						/*Saves player acount to prevent dupping*/
-						private ["_save"];
-						if (isNil "dtk_seasion" or isNil "dtk_side" or isNil "dtk_sidename")exitWith {systemChat "[SAVE ABORTED]Your stats have not loaded yet"};
-
-						_save = 
-						[player,
-							[
-								["Main", "Bank", kontostand], 
-								["Main", "NAME", name player],
-								["Main", "Hunger", dtk_hunger], 	
-								[dtk_side, "Inventory", player getVariable "dtk_storage"], 
-								[dtk_side, "Licenses", (player getvariable "cdb_license")], 	
-								[dtk_side, "Vehicles", INVVehiclesLand],
-								[dtk_side, "Pistol", (player getVariable ["Pistol",""])], 	
-								[dtk_side, "Rifle", (player getVariable ["Rifle",""])], 
-								[dtk_side, "Weapons", weapons player], 
-								[dtk_side, "Magazines", magazines player],
-								[dtk_side, "Warrants",(player getvariable "cdb_warrants")],
-								[dtk_side, "Notes",(player getvariable "cdb_notes")],
-								[dtk_side, "Bounty",(player getvariable "cdb_bounty")],
-								[dtk_side, "Storage",INV_PrivateStorage],
-								[dtk_side, "Apps",INVAppsInstalled],
-								["Main", "lifestate", (lifeState player)],
-								[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],
-								["Main", "Side", [dtk_side,s_seasion]]
-							]
-						];
-						["SERVER",_save,"S_statsave_save",false,false]call network_MPExec;
+						[]call statsave_Save;
 						_text1 = format ["Saving Stats",_e]; 
 					};
 					_abortctrl ctrlSetText _text1;

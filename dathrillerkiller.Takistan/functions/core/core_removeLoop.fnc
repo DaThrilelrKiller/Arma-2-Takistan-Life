@@ -1,4 +1,4 @@
-private ["_return","_index"];
+﻿private ["_return","_index"];
 _index = _this;
 
 _return = {

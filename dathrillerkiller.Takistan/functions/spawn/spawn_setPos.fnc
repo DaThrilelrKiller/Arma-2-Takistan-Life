@@ -1,4 +1,4 @@
-private ["_array"];
+﻿private ["_array"];
 _array = call compile lbData [1401, (lbCurSel 1401)];
 
 if (isNil '_array') exitWith 
@@ -22,3 +22,4 @@ player setPos _array;
 
 dtk_cam cameraEffect ["terminate","back"];
 168 cutText ["", "PLAIN"];
+dtk_spawned = true;

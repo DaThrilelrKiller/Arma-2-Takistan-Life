@@ -1,4 +1,4 @@
-_return = [];
+﻿_return = [];
 
 {
 	_return set [count _return,name _x];

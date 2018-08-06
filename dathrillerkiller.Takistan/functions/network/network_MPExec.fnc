@@ -1,4 +1,4 @@
-private ["_Target","_Prams","_Sceduled","_Function","_OnClient","_Allowed","_MPPaket"];
+﻿private ["_Target","_Prams","_Sceduled","_Function","_OnClient","_Allowed","_MPPaket"];
 
 _Target = (_this select 0);
 _Prams = (_this select 1);

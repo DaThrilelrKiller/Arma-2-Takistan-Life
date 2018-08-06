@@ -1,4 +1,4 @@
-private ["_name","_type","_key","_shift","_ctrl","_alt","_keyvarialbe","_code"];
+﻿private ["_name","_type","_key","_shift","_ctrl","_alt","_keyvarialbe","_code"];
 
 _name = lbText [1401, (lbCurSel 1401)];
 _data = profileNamespace getVariable _name;

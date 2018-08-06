@@ -1,4 +1,4 @@
-
-if (!isNil "Kontostand")then {
-if (Kontostand > bank_limit) then {Kontostand = bank_limit;systemChat  localize "STRS_maxbank";};
+﻿
+if (!isNil "dtk_bank")then {
+if (dtk_bank > bank_limit) then {dtk_bank = bank_limit;systemChat  localize "STRS_maxbank";};
 };

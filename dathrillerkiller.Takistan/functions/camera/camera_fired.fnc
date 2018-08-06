@@ -1,4 +1,4 @@
-if !(v_camera_bool)exitWith {};
+﻿if !(v_camera_bool)exitWith {};
 
 systemchat str _this;
 

@@ -1,4 +1,4 @@
-_Prams = (_this select 0);
+﻿_Prams = (_this select 0);
 _Function = (_this select 1);
 _Function = if (typeName _Function == "CODE")then {_Function}else{call compile _Function};
 _Sceduled = (_this select 2);

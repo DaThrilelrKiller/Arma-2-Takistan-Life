@@ -1,4 +1,4 @@
-private ["_vehicle","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
+﻿private ["_vehicle","_data","_owners","_owner","_name","_side","_unit","_trunk","_upgrade","_weapons","_magazines","_plate","_warrants","_license","_notes","_sirens","_displayname"];
 
 _vehicle = _this select 0;
 

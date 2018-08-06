@@ -1,4 +1,4 @@
-private ["_road","_name","_id"];
+﻿private ["_road","_name","_id"];
 
 if (isOnRoad player)then 
 {

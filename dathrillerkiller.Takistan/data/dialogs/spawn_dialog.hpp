@@ -1,9 +1,9 @@
-class AR_SpawnMenu
+﻿class AR_SpawnMenu
 {
 	idd = 1600;
 	movingEnable = true;
 	objects[] = {};
-	onLoad = "[]spawn spawn_menu;";
+	onLoad = "[]spawn spawn_menu; _this call display_keypress";
 	class controls
 	{	
 
@@ -361,9 +361,9 @@ class AR_SpawnMenu
 		
 		class Custmize: RscButton
 		{
-			idc = 1601;
-			text = "";
-			action = "";
+			idc = 1602;
+			text = "Change Nation";
+			action = "[]call spawn_changeNation";
 			x = 0.525118;
 			y = 0.712766;
 			w = 0.4487;

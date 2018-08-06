@@ -1,4 +1,4 @@
-private["_cars","_baitcar","_baitctrls"];
+﻿private["_cars","_baitcar","_baitctrls"];
 
 _cars = nearestObjects [getPos player, ["LandVehicle"], 10];
 if (count _cars < 1) exitWith {systemChat  "No Cars To Bait!";};

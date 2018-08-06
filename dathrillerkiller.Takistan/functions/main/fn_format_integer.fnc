@@ -1,4 +1,4 @@
-	private["_value", "_nan", "_separator"];
+﻿	private["_value", "_nan", "_separator"];
 	_nan = "NotANumber"; 
 	_value = _this select 0;
 	_separator = _this select 1;

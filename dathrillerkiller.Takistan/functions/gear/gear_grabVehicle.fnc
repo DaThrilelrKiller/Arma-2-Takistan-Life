@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: gear_grabVehicle.fnc
 Desc: Grabs the vehicle that has the same display name of the gear you are trying to acess
 Author: DaThrillerKiller -PureGaming Founder

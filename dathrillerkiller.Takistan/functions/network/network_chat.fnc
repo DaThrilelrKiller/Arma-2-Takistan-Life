@@ -1,4 +1,4 @@
-private ["_Condition","_text"];
+﻿private ["_Condition","_text"];
 _Condition = call compile(_this select 0);
 _text = _this select 1;
 _mode = _this select 2;
