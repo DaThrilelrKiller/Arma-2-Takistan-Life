@@ -52,5 +52,8 @@ processInitCommands;
 ["ALL",player,{_this addaction ["","noscript.sqf",format['%1 call core_interact;',_this],25,false,true,"LeanRight","player distance _target < 5 && {!([_target,'Interact (E)','']call tag_show)}"];},false,false]call network_MPExec;
 	
 call gps_diary;
+if ([player]call medical_medic)then {
+titleText ["You are now a medic", "PLAIN DOWN"];
+};
 	
 true

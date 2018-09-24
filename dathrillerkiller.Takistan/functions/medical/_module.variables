@@ -20,7 +20,7 @@ Medica classnames
 "CZ_Soldier_medik_DES_EP1"
 "US_Soldier_Medic_EP1"
 "US_Delta_Force_Medic_EP1"
-"TK_Soldier_Medic_EP1"
+"TK_Soldier_Medic_EP1" --medic
 "GER_Soldier_Medic_EP1"
 "EW_Greg"
 "BAF_Soldier_Medic_MTP"
@@ -32,7 +32,7 @@ Medica classnames
 "Ins_Soldier_Medic_AllWeaponSlots"
 "CDF_Soldier_Medic_AllWeaponSlots"
 "CZ_Soldier_medik_DES_AllWeaponSlots_EP1"
-"US_Soldier_Medic_AllWeaponSlots_EP1"
+"US_Soldier_Medic_AllWeaponSlots_EP1"  --north medic
 "TK_Soldier_Medic_AllWeaponSlots_EP1"
 "GER_Soldier_Medic_AllWeaponSlots_EP1"
 "Soldier_Medic_AllWeaponSlots_PMC"

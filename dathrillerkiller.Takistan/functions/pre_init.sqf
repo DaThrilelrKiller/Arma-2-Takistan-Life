@@ -17,6 +17,7 @@ dtk_fnc_total = 0;
 
 dtk_active_modules = 
 [
+"Music",
 "Network",
 "Core",
 "Action",
@@ -73,17 +74,13 @@ dtk_active_modules =
 "Fingerprints",
 "Hud",
 "killfeed",
+"Mounted",
 "Spawn"
 ];
 
-/*loads variables first for all active modules*/
-{
-	call compile preprocessFile format["functions\%1\_module.variables",_x];
-}count dtk_active_modules;
-
-
 /*loads module functions*/
 {
+	call compile preprocessFile format["functions\%1\_module.variables",_x];
 	_functions = call compile preprocessFile format ["functions\%1\_module.functions",_x];
 	_module = _x;
 	{

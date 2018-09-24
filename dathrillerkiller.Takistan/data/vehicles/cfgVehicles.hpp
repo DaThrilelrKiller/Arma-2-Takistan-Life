@@ -12,6 +12,7 @@ class BTR40_MG_TK_INS_EP1;
 class BTR40_TK_INS_EP1;
 class SUV_UN_EP1;
 class VolhaLimo_TK_CIV_EP1;
+class Volha_2_TK_CIV_EP1;
 
 class CfgVehicles {
 	class copUni0 : Soldier_Crew_PMC {
@@ -117,5 +118,9 @@ class CfgVehicles {
 	class VolhaLimo_TK_CIV_EP1 : VolhaLimo_TK_CIV_EP1 {
 		displayName = "Vohla Black";
 		hiddenSelectionsTextures[] = {"data\vehicles\textures\volha_cop.paa"};
+	};
+	class Volha_2_TK_CIV_MEM : VolhaLimo_TK_CIV_EP1 {
+		displayName = "Vohla Black";
+		hiddenSelectionsTextures[] = {"data\vehicles\textures\memvohla.paa"};
 	};
 };

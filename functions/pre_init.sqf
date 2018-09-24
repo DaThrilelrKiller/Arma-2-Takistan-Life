@@ -18,13 +18,9 @@ dtk_server_modules =
 "War"
 ];
 
-/*loads variables first for all active modules*/
-{
-	call compile preprocessFile format ["\MPMissions\functions\%1\_module.variables", _x ];
-}count dtk_server_modules;
-
 /*loads module functions*/ 
 {
+	call compile preprocessFile format ["\MPMissions\functions\%1\_module.variables", _x ];
 	_functions = call compile preprocessFile format["\MPMissions\functions\%1\_module.functions", _x];
 	_module = _x;
 	{

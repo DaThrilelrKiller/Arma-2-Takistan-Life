@@ -12,6 +12,7 @@
 ctrlSetText [221, "Retrive Vehicle"];
 
 buttonSetAction [221,"
+ctrlEnable [221, false];
 _Array = call compile (lbData [1, (lbCurSel 1)]); 
 _Scriptname = _Array select 0;
 _trunk = _Array select 1;

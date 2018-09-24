@@ -14,7 +14,8 @@ ipad_backgrounds = [
 'ca\ui\data\loadscreen_test_e_co.paa',
 'ca\ui\data\loadscreen_test_a_co.paa',
 'ca\ui\data\loadscreen_test_f_co.paa',
-'ca\ui\data\loadscreen_test_c_co.paa'
+'ca\ui\data\loadscreen_test_c_co.paa',
+'data\images\loading.jpg'
 ];
 
 INV_apps = [

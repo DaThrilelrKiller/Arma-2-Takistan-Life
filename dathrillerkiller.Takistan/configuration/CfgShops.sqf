@@ -486,12 +486,23 @@ _is = [
 	 "medikit",
 	 "lighter"
  ];
+ 
+ 
+_northMedic = [
+
+];
+
+_SouthMedic = [
+
+];
 
 _terrorairlist = [];
 
 INV_ItemShops = [
-[insure,["","Insurance"],insure,dummyobj,_ins, _empty,false,{true}],
+/* [insure,["","Insurance"],insure,dummyobj,_ins, _empty,false,{true}], */
 [lumbermill,["","Lumber Mill"],lumbermill,dummyobj,[],_LummberMill,false,{dtk_civ}],
+[SouthMedic,["Paramedic","Medic Equipment"],mayorvehspawn,mayorvehspawn,[],_SouthMedic,false,{dtk_civ && (dtk_nation == "South") && ([player]call medical_medic)}],
+[NorthMedic,["Paramedic","Medic Equipment"],mayorvehspawn,mayorvehspawn,[],_northMedic,false,{dtk_civ && (dtk_nation == "North") && ([player]call medical_medic)}],
 [BuildingCollapesLogic,["","SFG App Store"],dummyobj,dummyobj,"AppStoreArray","AppStoreArray",false,{true}],
 [dtkgarage,["",""],dummyobj,dummyobj,"garage_items","garage_items",false,{true}],
 [gasstation1,["Gas pump","Gas n Porn"],dummyobj,dummyobj,_fs,_fs,true,{true}],
@@ -519,7 +530,7 @@ INV_ItemShops = [
 [gunshop1,["Rifle","Gun Shop"],gunbox1,dummyobj,_gs,_gs,true,{true}],
 [equipshop1,["tools","Equipment Shop"],equipbox,dummyobj,_es,_es,true,{true}],
 [airshop,["heli","Air Shop"],dummyobj,asairspawn,_as,_as,true,{true}],
-[airshop_1,["heli","Loy Manara Air Shop"],dummyobj,"asairspawn_1",_as,_as,true,{true}],
+/* [airshop_1,["heli","Loy Manara Air Shop"],dummyobj,"asairspawn_1",_as,_as,true,{true}], */
 [Oil_1,["tools","Mining equipment / Oil Processing"],dummyobj,dummyobj,_ms,_ms,true,{true}],
 [resourcesell,["","Sell Resources"],dummyobj,dummyobj,_rs,_rs,true,{true}],
 [RingShop,["","Ring Sell"],dummyobj,dummyobj,_gds,_gds,true,{true}],
@@ -550,9 +561,9 @@ INV_ItemShops = [
 [mayorbox,["","Prime Minister Shop"],mayorbox,dummyobj,_mayorbox,_mayorbox,true,{dtk_civ}],
 [equipshop2,["tools","Equipment Shop"],equipbox2,dummyobj,_es,_es,true,{true}],
 [memshop,["","Member Shop"],membox2,dummyobj,_memshop,_memshop,true,{true}],
-[southveh,["","South Government Vehicles"],dummyobj,soucarspawn,_souveh,_souveh,true,{dtk_civ}],
-[southair,["heli","South Government Air"],dummyobj,souairspawn,_souair,_souair,true,{dtk_civ}],
-[southshop,["","South Government Shop"],southbox,dummyobj,_soushop,_soushop,true,{true}],
+[southveh,["","South Government Vehicles"],dummyobj,soucarspawn,_souveh,_souveh,true,{dtk_civ && (dtk_nation == "South")}],
+[southair,["heli","South Government Air"],dummyobj,souairspawn,_souair,_souair,true,{dtk_civ && (dtk_nation == "South")}],
+[southshop,["","South Government Shop"],southbox,dummyobj,_soushop,_soushop,true,{dtk_civ && (dtk_nation == "South")}],
 [equipshop3,["tools","Equipment Shop"],equipbox3,dummyobj,_es,_es,true,{true}],
 [coparmed,["","Trained Firearms Officer"],coparmed,cairspawn,_copfo,_copfo,true,{true}],
 [unnco,["","UN NCO Equipment"],unnco,uncarspawn,_unnco,_unnco,true,{dtk_un}],

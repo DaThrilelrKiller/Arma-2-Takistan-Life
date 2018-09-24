@@ -1,4 +1,9 @@
 ﻿hintSilent "War will start in 20 minutes! Head to your government complex to participate or follow UN instructions.";
+_north = ["US_Soldier_EP1","US_Soldier_EP1","US_Soldier_Medic_AllWeaponSlots_EP1"];
+_south = ["TK_Soldier_EP1","TK_Soldier_EP1","TK_Soldier_Medic_EP1"];
+
+_clothing = [_south,_north]select (dtk_nation == "North");
+_clothing = _clothing call bis_selectRandom;
 
 if (dtk_civ && {!((player call gang_name) == "South Goverment")})then {
 	createDialog "ja_nein";
@@ -6,7 +11,6 @@ if (dtk_civ && {!((player call gang_name) == "South Goverment")})then {
 	waitUntil {!isNil "dtk_answer"};
 	
 	if (dtk_answer)then {
-		_clothing = ["TK_Soldier_EP1","US_Soldier_EP1"]select (dtk_nation == "North");
 		[_clothing] call clothing_switch;
 		[]spawn war_capture;
 	}else{
@@ -15,7 +19,6 @@ if (dtk_civ && {!((player call gang_name) == "South Goverment")})then {
 };
 
 if (dtk_civ && {((player call gang_name) == "South Goverment")})then {
-	_clothing = ["TK_Soldier_EP1","US_Soldier_EP1"]select (dtk_nation == "North");
 	[_clothing] call clothing_switch;
 	[]spawn war_capture;
 };

@@ -10,5 +10,6 @@ private ["_pos","_rb4h"];
 		
 		_rb4h attachTo [MapCleanObjects, [0, 0, 0]];
 		_rb4h allowDamage false;
+		detach _rb4h;
 	}forEach removeBuilgings;
 };

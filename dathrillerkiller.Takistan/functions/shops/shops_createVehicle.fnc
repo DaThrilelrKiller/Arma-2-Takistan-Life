@@ -22,6 +22,7 @@ _classname =  _name call config_class;
 			clearWeaponCargo this; 
 			clearMagazineCargo this;
 			this lock true;
+			[this]call mounted_add_actions;
 		"
 		, round(random 10), round(time)];
 	
@@ -29,6 +30,7 @@ _classname =  _name call config_class;
 	_vehicle setDir _dir;
 	_vehicle setVariable ["DTK_OwnerUID",_data, true];
 	_vehicle setVariable ["dtk_storage",[[],[]], true];
+	_vehicle setvariable ["tuning",1.008, true];
 	_vehicle addeventhandler ["HandleDamage",'_this call vehicle_handleDamage' ];
 
 	

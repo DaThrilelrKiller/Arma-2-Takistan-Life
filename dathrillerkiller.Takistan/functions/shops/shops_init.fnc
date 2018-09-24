@@ -16,5 +16,5 @@ private ["_data","_img","_text"];
 	_img = if (_img != "")then {format ["data\images\tags\%1",_img]}else{""};
 	_text = _data select 1;
 	
-	(_x select 0) addaction ["","noscript.sqf",format["[%1]call shops_openshop;",_ForEachIndex], 25, false, true, "LeanRight",format ["player distance _target < 5 && {!([_target,'%2','%1']call tag_show)}",_img,_text]];
+	(_x select 0) addaction ["","noscript.sqf",format["[%1]call shops_openshop;",_ForEachIndex], 25, false, true, "LeanRight",format ["player distance _target < 5 && {!([_target,'%2 (%3)','%1']call tag_show)}",_img,_text,((actionKeysNamesArray "LEANRIGHT")select 0)]];
 }forEach INV_ItemShops;

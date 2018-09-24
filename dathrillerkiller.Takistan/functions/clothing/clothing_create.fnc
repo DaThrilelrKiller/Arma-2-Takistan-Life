@@ -1,5 +1,7 @@
 ﻿_type = _this select 0;
 _type = _type call config_class;
+_type = if (_type == "")then {_this select 0}else{_type};
+
 _config =  (missionConfigFile >> "CfgVehicles" >> _type);
 _init = "";
 _textures = [];

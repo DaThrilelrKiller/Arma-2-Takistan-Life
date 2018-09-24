@@ -231,6 +231,7 @@ dtk_vehicles =
 ["Old_moto_TK_Civ_EP1",["vehicle","car"],["Old_moto_TK_Civ_EP1","Old Motorcycle"],[285,126],[1,"car","probator",60],[50,[1,0,0,1]]],
 ["Volha_1_TK_CIV_EP1",["vehicle","car"],["Volha_1_TK_CIV_EP1","Vohla Blue"],[835,315],[1,"car","probator",100],[150,[1,0,0,3]]],
 ["Volha_2_TK_CIV_EP1",["vehicle","car"],["Volha_2_TK_CIV_EP1","Vohla Gray"],[835,315],[1,"car","probator",100],[150,[1,0,0,3]]],
+["Volha_2_TK_CIV_MEM",["vehicle","car"],["Volha_2_TK_CIV_EP1","Vohla Meme"],[835,315],[1,"car","probator",100],[150,[1,0,0,3]]],
 ["Lada1_TK_CIV_EP1",["vehicle","car"],["Lada1_TK_CIV_EP1","Lada"],[799,284],[1,"car","probator",100],[150,[1,0,0,3]]],
 ["Lada2_TK_CIV_EP1",["vehicle","car"],["Lada2_TK_CIV_EP1","Lada Hippie"],[799,284],[1,"car","probator",100],[150,[1,0,0,3]]],
 ["S1203_TK_CIV_EP1",["vehicle","car"],["S1203_TK_CIV_EP1","S1203 Van"],[1850,625],[1,"car","probator",120],[150,[1,0,0,3]]],
@@ -577,6 +578,7 @@ dtk_items = [
 ["camera_laptop",["Item", "misc"],["camera_laptop", "CCTV Laptop"],[10000, 10000], [20, "",""], [false, true, false,false,"camera_laptop"]],
 ["brush",["Item", "misc"],["Suitcase", "Detective Brush"],[1000, 1000], [20, "",""], [false, true, false,false,"fingerprints_gather"]],
 
+["Bandit2_DZ",["clothing","cloth"],["Bandit2_DZ","Bandit"],[30,30],[0.1,"",""],[true,false,true,false,"clothing_switch"]],
 ["CopUniDef",["clothing","cloth"],["Policeman","Policeman Uniform"],[30,30],[0.1,"",""],[true,false,true,false,"clothing_switch"]],
 ["copUni0",["clothing","cloth"],["copUni0","Traffic Cop Uniform"],[30,30],[0.1,"","patrol_training"],[true,false,true,false,"clothing_switch"]],
 ["copUni1",["clothing","cloth"],["copUni1","PC Uniform"],[30,30],[0.1,"","response_training"],[true,false,true,false,"clothing_switch"]],
@@ -645,5 +647,5 @@ dtk_items = [
 dtk_master = dtk_weapons + dtk_magazines + dtk_vehicles + dtk_items;
 
 {
-	missionNamespace setVariable [format ["dtk_%1",_x select 0], _x];
+	missionNamespace setVariable [_x select 0, _x];
 } count dtk_master;
