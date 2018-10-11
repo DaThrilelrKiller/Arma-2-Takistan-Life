@@ -1,1 +1,1 @@
-	(_this select 0) getVariable ["mountedVehicle", objNull]
+(_this select 0) getVariable ["mountedVehicle", objNull]

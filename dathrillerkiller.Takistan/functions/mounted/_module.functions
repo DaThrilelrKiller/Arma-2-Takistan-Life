@@ -25,6 +25,5 @@
 "remove_keyUp",
 "mouseMoving_handler",
 "setup_mouseMoving",
-"remove_mouseMoving",
-"init"
+"remove_mouseMoving"
 ];
